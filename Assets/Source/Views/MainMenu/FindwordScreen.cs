@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace Source.MainScen
+namespace Source
 {
-    public class FindwordScreen: View
+    public class FindwordScreen: MonoBehaviour
 
     {
         

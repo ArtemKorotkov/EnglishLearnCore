@@ -1,96 +1,109 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
 using Source.MainScen;
+using UnityEngine;
+using CryoDI;
 
 namespace Source
 {
-    public class NavigationController: IController
+    public class NavigationController : IController
     {
-       
-        private MainMenuScreen MainMenu;
-        private SearchWordScreen SearchWord;
-        private SetWordScreen SetWord;
+        [Dependency] private MainMenuView MainMenu { get; set; }
+        [Dependency] private SearchWordView SearchWord { get; set; }
+        [Dependency] private SetWordView SetWord { get; set; }
+        [Dependency] private AllFoldersView AllFolders { get; set; }
 
-        private IView CurentState;
-        private IView StateByDefault;
+        private Type CurentState;
+        private Type StateByDefault;
 
-        private Dictionary<Type, IView> MapAllStates;
-        private Dictionary<Type, IView> MapPreviousStates;
-        private IView PreviousStateByDefault;
-        
+        private Dictionary<Type, IWindow> MapAllStates;
+        private Dictionary<Type, Type> MapPreviousStates;
+        private Type PreviousStateByDefault;
 
-        public NavigationController(MainMenuScreen mainMenu,SearchWordScreen searchWord,SetWordScreen setWord)
-        {
-            this.MainMenu = mainMenu;
-            this.SearchWord = searchWord;
-            this.SetWord = setWord;
-            
-            MapAllStates = new Dictionary<Type, IView>();
-            MapAllStates[typeof(MainMenuScreen)] = MainMenu;
-            MapAllStates[typeof(SearchWordScreen)] = SearchWord;
-            MapAllStates[typeof(SetWordScreen)] = SetWord;
-            
-            MapPreviousStates = new Dictionary<Type, IView>();
-            
-        }
+
+        private Camera _camera;
+
 
         public void Init()
         {
-            SubscribeClikToBack();
+            MapAllStates = new Dictionary<Type, IWindow>
+            {
+                [typeof(MainMenuView)] = MainMenu.window,
+                [typeof(SearchWordView)] = SearchWord.window,
+                [typeof(SetWordView)] = SetWord.window,
+                [typeof(AllFoldersView)] = AllFolders.window
+            };
+
+            MapPreviousStates = new Dictionary<Type, Type>();
+
+            SubscribeAllStateToClickToBack();
+            ActivateAllStates();
             HideAllStates();
-            StateByDefault = MainMenu;
-            SetPreviousStatesByDefault(StateByDefault);
             
+            StateByDefault = typeof(MainMenuView);
+            CurentState = StateByDefault;
             SetState(StateByDefault);
-            
-            MainMenu.DictFunctions.OnClickToSearchWord += () => SetState(SearchWord);
-            SearchWord.OnClickToSetWord += () => SetState(SetWord);
-            
+            SetDefaultPreviousState(StateByDefault);
+
+            MainMenu.dictFunctions.OnClickToSearchWord += () => SetState(typeof(SearchWordView));
+            SearchWord.OnClickToSetWord += () => SetState(typeof(SetWordView));
+
             SetWord.OnClickToAddWord += () => SetState(StateByDefault);
         }
 
-        private void SetState(IView state,bool setPreviousState = true)
+        private void SetState(Type state, bool setPreviousState = true)
         {
-            CurentState?.Hide();
-
             if (setPreviousState)
             {
-                MapPreviousStates[state.GetType()] = CurentState;
+
+                MapPreviousStates[state] = CurentState;
             }
-            
+
+            MapAllStates[CurentState]?.Hide();
             CurentState = state;
-            CurentState.Show();
+            MapAllStates[CurentState].Show();
         }
 
         public void Run()
         {
-            
         }
 
         private void ChangeStateToPrevious()
         {
             
-            SetState(MapPreviousStates[CurentState.GetType()],false);
+            var prevState = MapPreviousStates[CurentState];
+            SetState(prevState,false);
+            
         }
 
-        private void SubscribeClikToBack()
+        private void SubscribeAllStateToClickToBack()
         {
             foreach (var state in MapAllStates)
                 MapAllStates[state.Key].OnClickToBack += ChangeStateToPrevious;
         }
-        
+
+        private void ActivateAllStates()
+        {
+            foreach (var state in MapAllStates.Values)
+            {
+                state.Activate();
+            }
+        }
+
         private void HideAllStates()
         {
-            foreach (var state in MapAllStates)
-                MapAllStates[state.Key].Hide();
+            foreach (var state in MapAllStates.Values)
+            {
+                state.Hide();
+            }
         }
-        
-        private void SetPreviousStatesByDefault(IView defolt)
+
+        private void SetDefaultPreviousState(Type defaultValue)
         {
             foreach (var state in MapAllStates)
-                MapPreviousStates[state.Key] =  defolt;
+                MapPreviousStates[state.Key] = defaultValue;
         }
-        
-       
     }
 }

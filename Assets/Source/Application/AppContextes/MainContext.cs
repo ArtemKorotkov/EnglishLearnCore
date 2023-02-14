@@ -1,21 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using CryoDI;
 using Source.MainScen;
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Source
 {
     public class MainContext : SceneContext
     {
-        [Header("Contexts")]
-        public MainMenuScreen MainMenu;
-        public SearchWordScreen SearchWord;
-        public SetWordScreen SetWord;
+        public CryoContainer ViewContainer;
 
+        protected override void SetupContainer(CryoContainer container)
+        {
+            container.RegisterSceneObject<SearchWordView>("Canvases/SearchWord", LifeTime.Scene);
+            container.RegisterSceneObject<MainMenuView>("Canvases/MainMenu", LifeTime.Scene);
+            container.RegisterSceneObject<SetWordView>("Canvases/SetWord", LifeTime.Scene);
+            container.RegisterSceneObject<AllFoldersView>("Canvases/AllFolders", LifeTime.Scene);
+            
+            ViewContainer = container;
+        }
     }
-
-    
-    
 }

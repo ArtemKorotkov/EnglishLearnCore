@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net.Mime;
+using CryoDI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +8,8 @@ namespace Source
 {
     public class MainState : IApplicationState
     {
-        
         private Application _application;
-        
+
         public bool Initialized { get; private set; }
 
         private List<IController> _controllers;
@@ -19,19 +19,18 @@ namespace Source
             application.SceneChanger.SwitchToMain();
             _application = application;
         }
-        
+
         public void Init(MainContext context)
         {
-            
-            var MainMenu = context.MainMenu;
-            var SearchWord = context.SearchWord;
-            var SetWord = context.SetWord;
+            var viewContainer = context.ViewContainer;
 
             _controllers = new List<IController>
             {
-               new NavigationController(MainMenu,SearchWord,SetWord),
-               new MainMenuController(MainMenu),
-               new LocalizationController()
+                viewContainer.BuildUp(new FolderController()),
+                viewContainer.BuildUp(new NavigationController()),
+                viewContainer.BuildUp(new MainMenuController()),
+                viewContainer.BuildUp(new LocalizationController())
+                
             };
 
             foreach (IController controller in _controllers)
@@ -44,9 +43,10 @@ namespace Source
         {
             foreach (IController controller in _controllers)
             {
+                controller.Run();
             }
         }
-        
+
         private void SwitchStateToLearning()
         {
             _application.SwitchState(new LearningState(_application));
