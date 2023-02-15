@@ -29,8 +29,8 @@ namespace Source
                 viewContainer.BuildUp(new FolderController()),
                 viewContainer.BuildUp(new NavigationController()),
                 viewContainer.BuildUp(new MainMenuController()),
-                viewContainer.BuildUp(new LocalizationController())
-                
+                viewContainer.BuildUp(new LocalizationController()),
+                viewContainer.BuildUp(new SerializationController())
             };
 
             foreach (IController controller in _controllers)
