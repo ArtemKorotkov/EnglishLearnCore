@@ -1,25 +1,24 @@
 ﻿using System;
+using Lean.Gui;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Source
 {
-    public class SetWordView: MonoBehaviour
+    public class SetWordView : MonoBehaviour
 
     {
+        [SerializeField] private LeanButton Add;
         public Window window;
         public event Action OnClickToAddWord;
 
-        [SerializeField] private Button Add;
-        
-        private void Start()
-            {
-                Add.onClick.AddListener(ClickToAddWord);
-            }
-
         private void ClickToAddWord()
-            {
-                OnClickToAddWord?.Invoke();
-            }
+        {
+            OnClickToAddWord?.Invoke();
+        }
+
+        private void Start()
+        {
+            Add.OnClick.AddListener(ClickToAddWord);
+        }
     }
 }
