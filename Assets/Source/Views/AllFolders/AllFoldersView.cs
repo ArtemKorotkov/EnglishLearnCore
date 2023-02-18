@@ -1,24 +1,26 @@
-﻿using System;
-using Unity.VisualScripting;
+﻿using System.Collections.Generic;
+using Source.Serialization;
 using UnityEngine;
 
 namespace Source
 {
     public class AllFoldersView : MonoBehaviour
     {
-        public Window window;
-        
-        [SerializeField] private Transform content;
 
+        [SerializeField] private Transform content;
         [SerializeField] private FolderButton buttonPrefab;
         
-        
+        public Window window;
 
-        public void DisplayAllFolders(Folder[] folders)
+        public void DisplayFolders(List<Folder> folders)
         {
             foreach (var folder in folders)
             {
                 FolderButton folderButton = Instantiate(buttonPrefab, content, false);
+                
+                folderButton.Name = folder.Name;
+                folderButton.Progress = folder.Progress;
+                folderButton.CountLearned = folder.CountLearned;
             }
         }
         

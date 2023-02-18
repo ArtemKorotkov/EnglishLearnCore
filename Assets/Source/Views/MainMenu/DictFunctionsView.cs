@@ -1,4 +1,5 @@
 ﻿using System;
+using Lean.Gui;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,22 +10,29 @@ namespace Source
     {
         public Window window;
         
-        [SerializeField] private Button searchWord;
-        [SerializeField] private Button addNewWord;
-        [SerializeField] private Button allWords;
-        [SerializeField] private Button learnWords;
-        [SerializeField] private Button repeatWords;
+        [SerializeField] private LeanButton searchWord;
+        [SerializeField] private LeanButton addNewWord;
+        [SerializeField] private LeanButton allWords;
+        [SerializeField] private LeanButton learnWords;
+        [SerializeField] private LeanButton repeatWords;
 
         public event Action OnClickToSearchWord;
+        public event Action OnClickToAllWords;
 
         private void Start()
         {
-            searchWord.onClick.AddListener(ClickToSearchWord);
+            searchWord.OnClick.AddListener(ClickToSearchWord);
+            allWords.OnClick.AddListener(ClickToAllWords);
         }
 
         private void ClickToSearchWord()
         {
             OnClickToSearchWord?.Invoke();
+        }
+
+        private void ClickToAllWords()
+        {
+            OnClickToAllWords?.Invoke();
         }
     }
 }

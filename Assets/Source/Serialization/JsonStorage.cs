@@ -1,54 +1,74 @@
-﻿using System.Collections.Generic;
+﻿#region
+
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
+
+#endregion
 
 namespace Source.Serialization
 {
-    public class JsonStorage
+    public class JsonStorage : IStorage
     {
-        private string _directoryPath;
-        private string[] _filePathes;
+        private const string DirectoryName = "/savesJson";
+
+        private readonly string _directoryPath;
+
         private List<Folder> _folders;
 
         public JsonStorage()
         {
-            var _directoryPath = UnityEngine.Application.persistentDataPath + "/savesJson";
-
-            if (!Directory.Exists(_directoryPath))
-                Directory.CreateDirectory(_directoryPath);
-            
-            var files = Directory.GetFiles(_directoryPath);
-
-            _folders = new List<Folder>();
-            foreach (var file in files)
-            {
-                Folder folder = JsonConvert.DeserializeObject<Folder>(File.ReadAllText(file));
-                _folders.Add(folder);
-            }
-            
+            _directoryPath = UnityEngine.Application.persistentDataPath + DirectoryName;
+            _folders = LoadAllFolders(_directoryPath);
         }
 
-        // public void Save(object saveData)
-        // {
-        //     var jsonData = JsonConvert.SerializeObject(saveData);
-        //
-        //     File.WriteAllText(_filePath, jsonData);
-        // }
-        //
-        // public object Load()
-        // {
-        //     if (!File.Exists(_filePath))
-        //         return null;
-        //
-        //     //var savedData = JsonConvert.DeserializeObject<GameData>(File.ReadAllText(_filePath));
-        //     //return savedData;
-        //     return null;
-        // }
-    }
-    
-    public class Folder
-    {
-        public string path;
+        public List<Folder> AllFolders
+        {
+            get => _folders.ToList();
+            private set => _folders = value;
+        }
 
+        public void SaveFolder(Folder folder)
+        {
+            _folders.RemoveAll(f => f.Name == folder.Name);
+            _folders.Add(folder);
+
+            var filePath = _directoryPath + "/" + folder.Name + ".Json";
+            var jsonData = JsonConvert.SerializeObject(folder);
+            File.WriteAllText(filePath, jsonData);
+        }
+
+        public void SaveFolders(List<Folder> folders)
+        {
+            foreach (var folder in folders) SaveFolder(folder);
+        }
+
+        public void Update()
+        {
+            _folders = LoadAllFolders(_directoryPath);
+        }
+
+
+        private List<Folder> LoadAllFolders(string directoryPath)
+        {
+            if (!Directory.Exists(directoryPath))
+                Directory.CreateDirectory(directoryPath);
+
+            var files = Directory.GetFiles(directoryPath);
+
+            var allFolders = new List<Folder>();
+
+            foreach (var file in files)
+            {
+                var folder = JsonConvert.DeserializeObject<Folder>(File.ReadAllText(file));
+
+                var emptyFolder = new Folder();
+                if (!folder.Equals(emptyFolder))
+                    allFolders.Add(folder);
+            }
+
+            return allFolders;
+        }
     }
 }

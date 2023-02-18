@@ -1,22 +1,23 @@
 ﻿using System;
+using Lean.Gui;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Source
 
 {
     public class SearchWordView : MonoBehaviour
     {
-        public Window window;
-        
-        [SerializeField] private Button setWord;
+        [SerializeField] private LeanButton setWord;
 
-        public event Action OnClickToSetWord;
+        public Window window;
 
         private void Start()
         {
-            setWord?.onClick.AddListener(ClickToSetWord);
+            setWord.OnClick.AddListener(ClickToSetWord);
         }
+
+
+        public event Action OnClickToSetWord;
 
         private void ClickToSetWord()
         {

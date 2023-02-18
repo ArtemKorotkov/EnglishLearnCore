@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Net.Mime;
 using CryoDI;
-using UnityEngine;
-using UnityEngine.UI;
+using Source.Serialization;
 
 namespace Source
 {
@@ -23,6 +21,8 @@ namespace Source
         public void Init(MainContext context)
         {
             var viewContainer = context.ViewContainer;
+            
+            viewContainer.RegisterSingleton<IStorage, JsonStorage>();
 
             _controllers = new List<IController>
             {
@@ -30,7 +30,7 @@ namespace Source
                 viewContainer.BuildUp(new NavigationController()),
                 viewContainer.BuildUp(new MainMenuController()),
                 viewContainer.BuildUp(new LocalizationController()),
-                viewContainer.BuildUp(new SerializationController())
+                viewContainer.BuildUp(new DataController())
             };
 
             foreach (IController controller in _controllers)

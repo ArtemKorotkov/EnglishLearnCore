@@ -1,34 +1,27 @@
 ﻿using System;
+using Lean.Gui;
 using Lean.Transition;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Source
 {
     public class Window : MonoBehaviour, IWindow
 
     {
-        [SerializeField] private Button back;
+        private float _targetAlpha;
+        [SerializeField] private LeanButton back;
         [SerializeField] private CanvasGroup canvasGroup;
-
-        [SerializeField] private LeanPlayer show;
         [SerializeField] private LeanPlayer hide;
 
-        private float _targetAlpha;
-
+        [SerializeField] private LeanPlayer show;
         public event Action OnClickToBack;
-
-        public event Action OnShow;
         public event Action OnHide;
-
-
+        public event Action OnShow;
         public bool IsShown { get; private set; }
 
-
-        private void Awake()
+        public void Activate()
         {
-            hide.Begin();
-            back?.onClick.AddListener(ClickToBack);
+            gameObject.SetActive(true);
         }
 
 
@@ -46,13 +39,15 @@ namespace Source
             canvasGroup.blocksRaycasts = true;
             IsShown = true;
             show.Begin();
-            
+
             OnShow?.Invoke();
         }
 
-        public void Activate()
+
+        private void Awake()
         {
-            gameObject.SetActive(true);
+            hide.Begin();
+            back.OnClick.AddListener(ClickToBack);
         }
 
         private void ClickToBack()
