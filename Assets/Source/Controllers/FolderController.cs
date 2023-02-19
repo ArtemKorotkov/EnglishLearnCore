@@ -1,5 +1,7 @@
 ﻿#region
 
+using System.Collections.Generic;
+using System.Linq;
 using CryoDI;
 using Source.Serialization;
 
@@ -17,29 +19,59 @@ namespace Source
         public void Init()
         {
             folder1 = new Folder();
-            folder1.Name = "11111";
-            folder1.Progress = "11111";
-            folder1.CountLearned = "111111";
-            Storage.SaveFolder(folder1);
-
-            folder1.Name = "66666";
-            folder1.Progress = "666666";
-            folder1.CountLearned = "666666";
-            Storage.SaveFolder(folder1);
-
-            folder1.Name = "11111";
-            folder1.Progress = "qwerty";
-            folder1.CountLearned = "qwerty";
-            Storage.SaveFolder(folder1);
-
-            var allFolders = Storage.AllFolders;
-
-            foreach (var folder in allFolders)
+           
+            
+            folder1.Name = "Путешествия";
+            folder1.Progress = Progress.Repeat;
+            folder1.CountLearned = 1;
+            
+            
+            folder1.Words = new List<Word>();
+            for (int i = 0; i < 1000; i++)
             {
-                var f = folder;
-                Storage.SaveFolder(f);
-                f.Name += "qqqqqqq";
+                var word = new Word();
+                folder1.Words.Add(word);
             }
+            Storage.SaveFolder(folder1);
+
+            folder1.Name = "Бизнес";
+            folder1.Progress = Progress.Comleted;
+            folder1.CountLearned = 2;
+
+            var prev = folder1.Words.ToList();
+            folder1.Words = new List<Word>();
+            folder1.Words.AddRange(prev);
+            for (int i = 0; i < 1000; i++)
+            {
+                var word = new Word();
+                folder1.Words.Add(word);
+            }
+            Storage.SaveFolder(folder1);
+            
+
+            folder1.Name = "Развлечения";
+            folder1.Progress = Progress.InProgress;
+            folder1.CountLearned = 3;
+            
+            var prev1 = folder1.Words.ToList();
+            folder1.Words = new List<Word>();
+            folder1.Words.AddRange(prev1);
+            
+            for (int i = 0; i < 1000; i++)
+            {
+                var word = new Word();
+                folder1.Words.Add(word);
+            }
+            Storage.SaveFolder(folder1);
+
+            // var allFolders = Storage.AllFolders;
+            //
+            // foreach (var folder in allFolders)
+            // {
+            //     var f = folder;
+            //     f.Name += "qqqqqqq";
+            //     Storage.SaveFolder(f);
+            // }
 
 
             AllFolders.window.OnShow += Show;
