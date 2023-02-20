@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace Source
 {
-    public class AllFoldersView : MonoBehaviour
+    public class DisplayFoldersView : MonoBehaviour
     {
         [SerializeField] private Transform content;
-        [SerializeField] private FolderButton buttonPrefab;
+        [SerializeField] private FolderButtonView buttonViewPrefab;
 
         public Window window;
 
@@ -16,11 +16,11 @@ namespace Source
             Clear();
             foreach (var folder in folders)
             {
-                FolderButton folderButton = Instantiate(buttonPrefab, content, false);
+                FolderButtonView folderButtonView = Instantiate(buttonViewPrefab, content, false);
 
-                folderButton.Name = folder.Name;
-                folderButton.CountLearned = "Выучено: " + folder.CountLearned + " из " + folder.Words?.Count.ToString();
-                folderButton.Progress = folder.Progress;
+                folderButtonView.Name = folder.Name;
+                folderButtonView.CountLearned = "Выучено: " + folder.CountLearned + " из " + folder.Words?.Count.ToString();
+                folderButtonView.Progress = folder.Progress;
             }
         }
         

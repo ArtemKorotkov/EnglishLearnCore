@@ -74,7 +74,7 @@ namespace Source
 
             if (stateType.Count > 1)
             {
-                Debug.LogError("You use more then one gameObject in ToolBar with the same Name");
+                Debug.LogError("You use more then one gameObject in ToolBar with the same NativeValue");
             }
 
             SetState(MapAllStates[stateType.First()]);

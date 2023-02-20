@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class FolderButton : MonoBehaviour
+    public class FolderButtonView : MonoBehaviour
     {
         [SerializeField] private new Text name;
         [SerializeField] private Text countLearned;
