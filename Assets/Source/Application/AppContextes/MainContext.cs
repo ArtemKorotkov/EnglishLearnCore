@@ -15,7 +15,8 @@ namespace Source
             container.RegisterSceneObject<SearchWordView>("Canvases/SearchWord", LifeTime.Scene);
             container.RegisterSceneObject<MainMenuView>("Canvases/MainMenu", LifeTime.Scene);
             container.RegisterSceneObject<SetWordView>("Canvases/SetWord", LifeTime.Scene);
-            container.RegisterSceneObject<AllFoldersView>("Canvases/AllFolders", LifeTime.Scene);
+            container.RegisterSceneObject<DisplayFoldersView>("Canvases/AllFolders", LifeTime.Scene);
+            container.RegisterSceneObject<DisplayWordsView>("Canvases/DisplayWords", LifeTime.Scene);
             
             ViewContainer = container;
         }

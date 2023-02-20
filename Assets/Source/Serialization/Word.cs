@@ -2,7 +2,8 @@
 {
     public struct Word
     {
-        public string Name;
-        public string Transcriptin;
+        public string NativeValue;
+        public string ForeignValue;
+        public Progress Progress;
     }
 }

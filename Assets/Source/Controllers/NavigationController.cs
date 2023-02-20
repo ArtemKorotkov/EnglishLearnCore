@@ -13,7 +13,7 @@ namespace Source
         [Dependency] private MainMenuView MainMenu { get; set; }
         [Dependency] private SearchWordView SearchWord { get; set; }
         [Dependency] private SetWordView SetWord { get; set; }
-        [Dependency] private AllFoldersView AllFolders { get; set; }
+        [Dependency] private DisplayFoldersView DisplayFolders { get; set; }
 
         private Type CurentState;
         private Type StateByDefault;
@@ -33,7 +33,7 @@ namespace Source
                 [typeof(MainMenuView)] = MainMenu.window,
                 [typeof(SearchWordView)] = SearchWord.window,
                 [typeof(SetWordView)] = SetWord.window,
-                [typeof(AllFoldersView)] = AllFolders.window,
+                [typeof(DisplayFoldersView)] = DisplayFolders.window,
             };
 
             MapPreviousStates = new Dictionary<Type, Type>();
@@ -48,7 +48,7 @@ namespace Source
             SetDefaultPreviousState(StateByDefault);
 
             MainMenu.dictFunctions.OnClickToSearchWord += () => SetState(typeof(SearchWordView));
-            MainMenu.dictFunctions.OnClickToAllWords += () => SetState(typeof(AllFoldersView));
+            MainMenu.dictFunctions.OnClickToAllWords += () => SetState(typeof(DisplayFoldersView));
             SearchWord.OnClickToSetWord += () => SetState(typeof(SetWordView));
             SetWord.OnClickToAddWord += () => SetState(StateByDefault);
             
