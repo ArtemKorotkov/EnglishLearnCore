@@ -9,5 +9,13 @@ namespace Source.Serialization
         public int CountLearned;
         public List<Word> Words;
         public Progress Progress;
+
+        public Folder(string name, int countLearned, List<Word> words, Progress progress)
+        {
+            Name = name;
+            CountLearned = countLearned;
+            Words = words;
+            Progress = progress;
+        }
     }
 }

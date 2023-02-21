@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Source.Serialization;
 using UnityEngine;
 
@@ -8,30 +9,32 @@ namespace Source
     {
         [SerializeField] private Transform content;
         [SerializeField] private FolderButtonView buttonViewPrefab;
+        public event Action<Folder> OnClickToFolder;
 
-        public Window window;
-
-        public void DisplayFolders(List<Folder> folders)
+        public void Display(List<Folder> folders)
         {
             Clear();
             foreach (var folder in folders)
             {
                 FolderButtonView folderButtonView = Instantiate(buttonViewPrefab, content, false);
-
-                folderButtonView.Name = folder.Name;
-                folderButtonView.CountLearned = "Выучено: " + folder.CountLearned + " из " + folder.Words?.Count.ToString();
-                folderButtonView.Progress = folder.Progress;
+                folderButtonView.DisplayFolder(folder);
+                folderButtonView.Onclick += ClickToFolder;
             }
         }
-        
+
         private void Clear()
         {
             var childCount = content.childCount;
-            
+
             for (int i = 0; i < childCount; i++)
             {
                 Destroy(content.GetChild(i).gameObject);
             }
+        }
+
+        private void ClickToFolder(Folder folder)
+        {
+            OnClickToFolder?.Invoke(folder);
         }
     }
 }

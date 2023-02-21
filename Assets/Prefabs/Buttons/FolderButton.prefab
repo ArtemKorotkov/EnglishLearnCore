@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03420359d5504dc38b20335a707fe43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 5620654402364304975}
   name: {fileID: 7087595156676491047}
   countLearned: {fileID: 7682859379171249201}
   progressImage: {fileID: 5015276182964573978}
@@ -238,6 +239,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
   m_PrefabInstance: {fileID: 487988953256827696}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5620654402364304975 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5243663553819899263, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+  m_PrefabInstance: {fileID: 487988953256827696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776437809013262854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fef0563e898f74f87bcb68d10688aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5018482607334575351
 PrefabInstance:
   m_ObjectHideFlags: 0

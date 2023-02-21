@@ -503,6 +503,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
   m_PrefabInstance: {fileID: 8451995904294460924}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4435686396956502147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5243663553819899263, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+  m_PrefabInstance: {fileID: 8451995904294460924}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8739336448070388938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fef0563e898f74f87bcb68d10688aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8739336448070388938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 865774477069979958, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
@@ -520,8 +531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb8f4d4b4b642aa82bb9a570cac3e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nativeValue: {fileID: 3760770425892209268}
+  button: {fileID: 4435686396956502147}
   foreignValue: {fileID: 7193970016147208981}
+  nativeValue: {fileID: 3760770425892209268}
   progressImage: {fileID: 8904016297954490101}
 --- !u!1001 &8911928701028822296
 PrefabInstance:
