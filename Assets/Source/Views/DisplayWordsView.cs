@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Source.Serialization;
 using UnityEngine;
 
@@ -8,18 +9,16 @@ namespace Source
     {
         [SerializeField] private Transform content;
         [SerializeField] private WordButtonView buttonViewPrefab;
+        public event Action<Word> OnClickToWord;
 
-        public Window window;
-
-        public void DisplayWords(Folder folder)
+        public void Display(Folder folder)
         {
             Clear();
             foreach (var word in folder.Words.ToList())
             {
-                WordButtonView  folderButtonView = Instantiate(buttonViewPrefab, content, false);
-                folderButtonView.NativeValue = word.NativeValue;
-                folderButtonView.ForeignValue = word.ForeignValue;
-                folderButtonView.Progress = word.Progress;
+                WordButtonView folderButtonView = Instantiate(buttonViewPrefab, content, false);
+                folderButtonView.DisplayWord(word);
+                folderButtonView.Onclick += ClickToWord;
             }
         }
 
@@ -31,6 +30,11 @@ namespace Source
             {
                 Destroy(content.GetChild(i).gameObject);
             }
+        }
+
+        private void ClickToWord(Word word)
+        {
+            OnClickToWord?.Invoke(word);
         }
     }
 }

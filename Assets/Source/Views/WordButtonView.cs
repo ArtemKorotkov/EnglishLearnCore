@@ -1,27 +1,38 @@
-﻿using UnityEngine;
+﻿using System;
+using Lean.Gui;
+using Source.Serialization;
+using UnityEngine;
 using UnityEngine.UI;
+
 
 namespace Source
 {
     public class WordButtonView : MonoBehaviour
     {
-        [SerializeField] private Text nativeValue;
+        [SerializeField] private LeanButton button;
         [SerializeField] private Text foreignValue;
+        [SerializeField] private Text nativeValue;
         [SerializeField] private ProgressImage progressImage;
+        private Word _displayedWord;
+        public event Action<Word> Onclick;
+        
 
-        public string NativeValue
+        private void Start()
         {
-            set => nativeValue.text = value;
+           button.OnClick.AddListener(Click);
         }
 
-        public string ForeignValue
+        public void DisplayWord(Word word)
         {
-            set => foreignValue.text = value;
+            _displayedWord = word;
+            foreignValue.text = word.ForeignValue;
+            nativeValue.text = word.NativeValue;
+            progressImage.SetIcon(word.Progress);
         }
 
-        public Progress Progress
+        private void Click()
         {
-            set => progressImage.SetIcon(value);
+            Onclick?.Invoke(_displayedWord);
         }
     }
 }
