@@ -714,7 +714,7 @@
         </member>
         <member name="T:Sirenix.Utilities.Editor.Expressions.ExpressionUtility">
             <summary>
-            Utility for parsing and emitting expression delegates.
+            UtilityUI for parsing and emitting expression delegates.
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseExpression(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
@@ -1687,7 +1687,7 @@
         </member>
         <member name="T:Sirenix.Utilities.Editor.GUITable">
              <summary>
-             <para>A Utility class for creating tables in Unity's editor GUI.</para>
+             <para>A UtilityUI class for creating tables in Unity's editor GUI.</para>
              <para>A table can either be created from scratch using new GUITable(xCount,yCount), or created using one of the static GUITable.Create overloads.</para>
              <para>See the online documentation, for examples and more information.</para>
              </summary>
@@ -7114,7 +7114,7 @@
         </member>
         <member name="T:Sirenix.Utilities.Editor.AssetUtilities">
             <summary>
-            Utility functions for Unity assets.
+            UtilityUI functions for Unity assets.
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.AssetUtilities.GetAllAssetsOfType``1">

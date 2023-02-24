@@ -13,7 +13,7 @@ namespace Source
         [SerializeField] private RectTransform target;
 
         [SerializeField] private List<RectTransform> elements;
-        [SerializeField] private float pudding = 0f;
+        [SerializeField] private float indent = 0f;
         
 
         [ContextMenu("Apply Now In Inspector")]
@@ -28,15 +28,9 @@ namespace Source
 #endif
 
             var maxHeightElement = elements.OrderByDescending(e => e.rect.height).First();
-            SetHeight(target, maxHeightElement.rect.height + pudding);
+            UtilityUI.SetHeight(target, maxHeightElement.rect.height + indent);
             LayoutRebuilder.ForceRebuildLayoutImmediate(target);
         }
-        //ToDO
-        public static void SetHeight(RectTransform transform, float height)
-        {
-            var tempSizeDelta = transform.sizeDelta;
-            tempSizeDelta.y = height;
-            transform.sizeDelta = tempSizeDelta;
-        }
+        
     }
 }

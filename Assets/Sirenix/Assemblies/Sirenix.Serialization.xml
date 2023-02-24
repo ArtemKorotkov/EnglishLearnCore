@@ -191,7 +191,7 @@
         </member>
         <member name="T:Sirenix.Serialization.Utilities.Editor.AssemblyImportSettingsUtilities">
             <summary>
-            Utility for correctly setting import on OdinSerializer assemblies based on platform and scripting backend.
+            UtilityUI for correctly setting import on OdinSerializer assemblies based on platform and scripting backend.
             </summary>
         </member>
         <member name="F:Sirenix.Serialization.Utilities.Editor.AssemblyImportSettingsUtilities.Platforms">
@@ -2315,7 +2315,7 @@
         </member>
         <member name="T:Sirenix.Serialization.Utilities.UnityVersion">
             <summary>
-            Utility class indicating current Unity version.
+            UtilityUI class indicating current Unity version.
             </summary>
         </member>
         <member name="M:Sirenix.Serialization.Utilities.UnityVersion.IsVersionOrGreater(System.Int32,System.Int32)">
@@ -5918,7 +5918,7 @@
         </member>
         <member name="T:Sirenix.Serialization.FormatterEmitter">
             <summary>
-            Utility class for emitting formatters using the <see cref="N:System.Reflection.Emit"/> namespace.
+            UtilityUI class for emitting formatters using the <see cref="N:System.Reflection.Emit"/> namespace.
             <para />
             NOTE: Some platforms do not support emitting. Check whether you can emit on the current platform using <see cref="P:Sirenix.Serialization.Utilities.EmitUtilities.CanEmit"/>.
             </summary>
@@ -5975,7 +5975,7 @@
         </member>
         <member name="T:Sirenix.Serialization.GenericCollectionFormatter">
             <summary>
-            Utility class for the <see cref="T:Sirenix.Serialization.GenericCollectionFormatter`2"/> class.
+            UtilityUI class for the <see cref="T:Sirenix.Serialization.GenericCollectionFormatter`2"/> class.
             </summary>
         </member>
         <member name="M:Sirenix.Serialization.GenericCollectionFormatter.CanFormat(System.Type,System.Type@)">
@@ -8530,7 +8530,7 @@
         </member>
         <member name="T:Sirenix.Serialization.UnitySerializationInitializer">
             <summary>
-            Utility class which initializes the Sirenix serialization system to be compatible with Unity.
+            UtilityUI class which initializes the Sirenix serialization system to be compatible with Unity.
             </summary>
         </member>
         <member name="M:Sirenix.Serialization.UnitySerializationInitializer.Initialize">
@@ -8658,7 +8658,7 @@
         </member>
         <member name="T:Sirenix.Serialization.FormatterLocator">
             <summary>
-            Utility class for locating and caching formatters for all non-primitive types.
+            UtilityUI class for locating and caching formatters for all non-primitive types.
             </summary>
         </member>
         <member name="E:Sirenix.Serialization.FormatterLocator.OnLocatedEmittableFormatterForType">

@@ -1750,7 +1750,7 @@
         </member>
         <member name="T:Sirenix.Utilities.Editor.AssetScriptGuidUtility">
             <summary>
-            Utility class for asset Guid script
+            UtilityUI class for asset Guid script
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.AssetScriptGuidUtility.TryUpdateAssetScriptGuid(System.String,System.Type)">
@@ -3573,7 +3573,7 @@
         </member>
         <member name="T:Sirenix.Utilities.UnityVersion">
             <summary>
-            Utility class indicating current Unity version.
+            UtilityUI class indicating current Unity version.
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.UnityVersion.IsVersionOrGreater(System.Int32,System.Int32)">

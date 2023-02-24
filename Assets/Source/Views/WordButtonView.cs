@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Lean.Gui;
+using Sirenix.OdinInspector;
 using Source.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,15 +9,13 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class WordButtonView : MonoBehaviour
+    public class WordButtonView : SerializedMonoBehaviour
     {
         [SerializeField] private LeanButton button;
         [SerializeField] private Text foreignValue;
         [SerializeField] private Text nativeValue;
         [SerializeField] private ProgressImage progressImage;
-        //ToDO
-        [SerializeField] private SplitCstUiView splitCstUi;
-        [SerializeField] private SetMaxHeightCstUiView setMaxHeightCstUi;
+        [SerializeField] private List<ICstUI>  customUiElements;
         private Word _displayedWord;
         public event Action<Word> Onclick;
         
@@ -38,8 +37,10 @@ namespace Source
         [ContextMenu("Apply Now In Inspector")]
         private void UpdateUiElements()
         {
-            splitCstUi.Apply();
-            setMaxHeightCstUi.Apply();
+            foreach (var cstUiElement in customUiElements)
+            {
+                cstUiElement.Apply();
+            }
         }
 
         private void Click()

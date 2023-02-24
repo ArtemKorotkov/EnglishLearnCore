@@ -5237,7 +5237,7 @@
         </member>
         <member name="T:Sirenix.OdinInspector.Editor.EditorOnlyModeConfig">
             <summary>
-            Editor Only Mode Utility.
+            Editor Only Mode UtilityUI.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.EditorOnlyModeConfig.Update">
@@ -6843,7 +6843,7 @@
         </member>
         <member name="T:Sirenix.OdinInspector.Editor.DrawerLocator">
             <summary>
-            <para>Utility class for locating and sorting property drawers for the inspector.</para>
+            <para>UtilityUI class for locating and sorting property drawers for the inspector.</para>
             <para>See Odin manual section 'Drawers in Depth' for details on how the DrawerLocator determines which drawers to use.</para>
             </summary>
         </member>
