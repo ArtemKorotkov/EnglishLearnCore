@@ -13,6 +13,7 @@ namespace Source
         [SerializeField] private LeanButton addWordFromSearch;
         [SerializeField] private LeanButton addWordFromFolder;
         [SerializeField] private DisplayWordsView displayWords;
+        [SerializeField] private RectTransform content;
         public Window window;
 
         private List<Word> _addedWords;
@@ -34,11 +35,13 @@ namespace Source
 
             word.ForeignValue += "1";
             _addedWords.Add(word);
+            displayWords.AddWord(word);
             
             var folder = new Folder();
             folder.Words = _addedWords;
             
-            displayWords.Display(folder);
+            //displayWords.Display(folder);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
     }
 }

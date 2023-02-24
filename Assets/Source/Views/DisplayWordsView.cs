@@ -16,11 +16,20 @@ namespace Source
             Clear();
             foreach (var word in folder.Words.ToList())
             {
-                WordButtonView folderButtonView = Instantiate(buttonViewPrefab, content, false);
-                folderButtonView.DisplayWord(word);
-                folderButtonView.Onclick += ClickToWord;
+                WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
+                wordButtonView.DisplayWord(word);
+                wordButtonView.Onclick += ClickToWord;
                 //LayoutRebuilder.ForceRebuildLayoutImmediate(content);
             }
+        }
+        public void AddWord(Word word)
+        {
+            
+                WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
+                wordButtonView.DisplayWord(word);
+                wordButtonView.Onclick += ClickToWord;
+                //LayoutRebuilder.ForceRebuildLayoutImmediate(content);
+            
         }
 
         private void Clear()
