@@ -37,6 +37,7 @@ namespace Source
             
             var folder = new Folder();
             folder.Words = _addedWords;
+            
             displayWords.Display(folder);
         }
     }
