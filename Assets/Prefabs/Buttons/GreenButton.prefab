@@ -276,6 +276,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5243663553819899263, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352635181020302382, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+      propertyPath: Data.Target
+      value: 
+      objectReference: {fileID: 8617337342749489141}
+    - target: {fileID: 8932607413478268624, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+      propertyPath: Data.Target
+      value: 
+      objectReference: {fileID: 8617337342749489141}
+    - target: {fileID: 8956273315074091984, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+      propertyPath: Data.Target
+      value: 
+      objectReference: {fileID: 8617337342749489141}
     - target: {fileID: 8956273315074091984, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
       propertyPath: Data.Value.b
       value: 0.6
@@ -284,10 +300,49 @@ PrefabInstance:
       propertyPath: Data.Value.r
       value: 0.6156863
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 127133772512275433, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
 --- !u!224 &4411842534958091033 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
   m_PrefabInstance: {fileID: 9147183854902190205}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8282834450173735243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 865774477069979958, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
+  m_PrefabInstance: {fileID: 9147183854902190205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8617337342749489141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282834450173735243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971a80afb0d16944fb678972c186dcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6156863, g: 1, b: 0.6, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  blur: 0.5
+  thickness: -1
+  inflate: 0
+  detail: 10
+  detailTL: -1
+  detailTR: -1
+  detailBL: -1
+  detailBR: -1
+  radius: 45
+  radiusTL: -1
+  radiusTR: -1
+  radiusBL: -1
+  radiusBR: -1
