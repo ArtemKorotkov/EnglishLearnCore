@@ -2,15 +2,15 @@
 using System.Linq;
 using Source.Serialization;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Source
 {
     public class DisplayWordsView : MonoBehaviour
     {
-        [SerializeField] private Transform content;
+        [SerializeField] private RectTransform content;
         [SerializeField] private WordButtonView buttonViewPrefab;
         public event Action<Word> OnClickToWord;
-
         public void Display(Folder folder)
         {
             Clear();
@@ -19,6 +19,7 @@ namespace Source
                 WordButtonView folderButtonView = Instantiate(buttonViewPrefab, content, false);
                 folderButtonView.DisplayWord(word);
                 folderButtonView.Onclick += ClickToWord;
+                //LayoutRebuilder.ForceRebuildLayoutImmediate(content);
             }
         }
 

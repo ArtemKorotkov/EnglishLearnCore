@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023687838812483337, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1112.4998
+      value: 1112.5
       objectReference: {fileID: 0}
     - target: {fileID: 1674825320207842298, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_Size
@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1674825320207842298, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1808345895375846168, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_Pivot.x
@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2135521347511372182, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_Name
-      value: DiplayWords
+      value: DiplayWords Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5066906278379847618, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
       propertyPath: m_AnchorMax.x
@@ -156,7 +156,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 6363670989596100854}
   buttonViewPrefab: {fileID: 7586129793852918222, guid: 80cbcb35395800244a9417dd88e0da98, type: 3}
-  window: {fileID: 0}
 --- !u!224 &6363670989596100854 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1023687838812483337, guid: 2219a909fb5a050458a2b5559dd699bd, type: 3}
