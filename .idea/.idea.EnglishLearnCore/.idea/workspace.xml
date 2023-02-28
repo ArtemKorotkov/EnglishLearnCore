@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/Новая папка/EnglishLearnCore/Assets/Prefabs/Elements/InputField.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/Новая папка/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/Новая папка/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/Новая папка/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/Новая папка/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,6 +72,7 @@
       <updated>1677243595679</updated>
       <workItem from="1677243601471" duration="38000" />
       <workItem from="1677257666964" duration="3014000" />
+      <workItem from="1677517914204" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
