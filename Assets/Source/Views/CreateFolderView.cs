@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using CryoDI;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
@@ -7,7 +9,7 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class CreateFolderView : MonoBehaviour
+    public class CreateFolderView : CryoBehaviour
     {
         private const int MaxLengthNameFolder = 24;
         [SerializeField] private InputField folderName;
@@ -16,10 +18,13 @@ namespace Source
         [SerializeField] private LeanButton addWordFromFolder;
         [SerializeField] private DisplayWordsView displayWords;
         [SerializeField] private RectTransform content;
-        [SerializeField] private NotificationView notification;
+        [Dependency] private NotificationView Notification { get; set; }
+        [Dependency] private IStorage Storage { get; set; }
         public Window window;
+        public event Action OnCreateFolder;
 
         private List<Word> _addedWords;
+        private Folder _currentFolder;
 
         private void Start()
         {
@@ -40,20 +45,38 @@ namespace Source
             word.ForeignValue += "1";
             _addedWords.Add(word);
             displayWords.AddWord(word);
-            
+
             var folder = new Folder();
             folder.Words = _addedWords;
-            
-            //displayWords.Display(folder);
+            _currentFolder = folder;
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
 
         private void CreateFolder()
         {
-            if (folderName.text.Length >= MaxLengthNameFolder)
+            var folderNameLength = folderName.text.Length;
+
+            if (folderNameLength >= MaxLengthNameFolder)
             {
-                notification.ShowWarning($"Название папки слишком большое, максимальное количество символов = {MaxLengthNameFolder}");
+                Notification.ShowWarning(
+                    $"Название папки слишком большое, максимальное количество символов = {MaxLengthNameFolder}");
+                return;
             }
+
+            if (folderNameLength == 0)
+            {
+                Notification.ShowWarning("Слишком короткое название");
+                return;
+            }
+
+            if (Storage.AllFolders.Any(folder => folder.Name == folderName.text))
+            {
+                Notification.ShowWarning("Такая папка уже существует");
+                return;
+            }
+            Debug.Log("123123");
+            Storage.SaveFolder(_currentFolder);
+            OnCreateFolder?.Invoke();
         }
     }
 }

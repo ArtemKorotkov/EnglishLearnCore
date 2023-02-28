@@ -9,14 +9,15 @@ namespace Source
     public class FolderController : IController
     {
         private Folder _folder1;
-        [Dependency] private AllFoldersView DisplayFolders { get; set; }
+        [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private IStorage Storage { get; set; }
+        [Dependency] private CreateFolderView CreateFolder { get; set; }
 
 
         public void Init()
         {
-            DisplayFolders.window.OnShow += Show;
+            AllFolders.window.OnShow += Show;
             var folder = new Folder("ads-as", 1, new List<Word>(), Progress.Repeat);
             folder.Name = "Слова";
             folder.Progress = Progress.Comleted;
@@ -38,16 +39,18 @@ namespace Source
                 Storage.SaveFolder(folder);
             }
 
-            DisplayFolders.OnClickToFolder += WordsFromFolder.DisplayWords;
+            AllFolders.OnClickToFolder += WordsFromFolder.DisplayWords;
+            CreateFolder.OnCreateFolder += Show;
+
         }
 
         public void Run()
         {
         }
-
+        
         private void Show()
         {
-            DisplayFolders.DisplayFolders(Storage.AllFolders);
+            AllFolders.DisplayFolders(Storage.AllFolders);
         }
     }
 }

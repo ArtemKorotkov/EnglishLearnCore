@@ -22,8 +22,6 @@ namespace Source
         {
             var viewContainer = context.ViewContainer;
             
-            viewContainer.RegisterSingleton<IStorage, JsonStorage>();
-
             _controllers = new List<IController>
             {
                 viewContainer.BuildUp(new FolderController()),

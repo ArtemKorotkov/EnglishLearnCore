@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="refactoring">
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment=" Added Notification">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NotificationView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NotificationView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/GrayButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/GrayButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/Notificatiom.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/Notificatiom.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,7 +82,7 @@
       <updated>1677243595679</updated>
       <workItem from="1677243601471" duration="38000" />
       <workItem from="1677257666964" duration="3014000" />
-      <workItem from="1677517914204" duration="6177000" />
+      <workItem from="1677517914204" duration="13257000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -102,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677565411665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" Added Notification">
+      <created>1677576544175</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677576544175</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +136,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="refactorinf" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value=" Added Notification" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Added Notification" />
   </component>
 </project>

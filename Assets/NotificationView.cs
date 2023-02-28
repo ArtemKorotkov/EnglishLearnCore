@@ -1,4 +1,5 @@
 using Lean.Transition;
+using Source;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class NotificationView : MonoBehaviour
 
     [SerializeField] private LeanPlayer OpenTransition;
     [SerializeField] private LeanPlayer CloseTransition;
+    public Window window;
 
     public void ShowWarning(string Warning)
     {

@@ -14,6 +14,7 @@ namespace Source
         [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private CreateFolderView CreateFolder { get; set; }
+        [Dependency] private NotificationView Notification { get; set; }
 
 
         private Type _currentState;
@@ -36,7 +37,8 @@ namespace Source
                 [typeof(SetWordView)] = SetWord.window,
                 [typeof(AllFoldersView)] = AllFolders.window,
                 [typeof(WordsFromFolderView)] = WordsFromFolder.window,
-                [typeof(CreateFolderView)] = CreateFolder.window
+                [typeof(CreateFolderView)] = CreateFolder.window,
+                [typeof(NotificationView)] = Notification.window
             };
 
             _mapPreviousStates = new Dictionary<Type, Type>();
