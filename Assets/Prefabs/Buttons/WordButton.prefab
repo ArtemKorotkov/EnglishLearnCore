@@ -650,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 828
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
       propertyPath: m_SizeDelta.y
@@ -792,36 +792,18 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 1913656948434021980}
-    - {fileID: 8577725430584158598}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: customUiElements
-      Entry: 7
-      Data: 0|MS.Internal.Xml.XPath.ClonableStack`1[[ICstUI, Assembly-CSharp]], System.Xml
-    - Name: 
-      Entry: 12
-      Data: 2
-    - Name: 
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    SerializationNodes: []
   button: {fileID: 4435686396956502147}
   foreignValue: {fileID: 7193970016147208981}
   nativeValue: {fileID: 3760770425892209268}
   progressImage: {fileID: 8904016297954490101}
+  splitCstUi: {fileID: 1913656948434021980}
+  setMaxHeightCstUi: {fileID: 8577725430584158598}
 --- !u!114 &8577725430584158598
 MonoBehaviour:
   m_ObjectHideFlags: 0

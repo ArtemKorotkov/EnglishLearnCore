@@ -9,11 +9,14 @@ namespace Source
 {
     public class CreateFolderView : MonoBehaviour
     {
+        private const int MaxLengthNameFolder = 24;
         [SerializeField] private InputField folderName;
+        [SerializeField] private LeanButton createFolder;
         [SerializeField] private LeanButton addWordFromSearch;
         [SerializeField] private LeanButton addWordFromFolder;
         [SerializeField] private DisplayWordsView displayWords;
         [SerializeField] private RectTransform content;
+        [SerializeField] private NotificationView notification;
         public Window window;
 
         private List<Word> _addedWords;
@@ -22,6 +25,7 @@ namespace Source
         {
             addWordFromSearch.OnClick.AddListener(AddWord);
             addWordFromFolder.OnClick.AddListener(AddWord);
+            createFolder.OnClick.AddListener(CreateFolder);
             _addedWords = new List<Word>();
         }
 
@@ -42,6 +46,14 @@ namespace Source
             
             //displayWords.Display(folder);
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
+        }
+
+        private void CreateFolder()
+        {
+            if (folderName.text.Length >= MaxLengthNameFolder)
+            {
+                notification.ShowWarning($"Название папки слишком большое, максимальное количество символов = {MaxLengthNameFolder}");
+            }
         }
     }
 }

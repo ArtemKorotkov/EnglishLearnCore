@@ -9,13 +9,16 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class WordButtonView : SerializedMonoBehaviour
+    public class WordButtonView : MonoBehaviour
     {
         [SerializeField] private LeanButton button;
         [SerializeField] private Text foreignValue;
         [SerializeField] private Text nativeValue;
         [SerializeField] private ProgressImage progressImage;
-        [SerializeField] private List<ICstUI>  customUiElements;
+        
+        [Space] [Header("Custom UI Elements")]
+        [SerializeField] private SplitCstUiView splitCstUi;
+        [SerializeField] private SetMaxHeightCstUiView setMaxHeightCstUi;
         private Word _displayedWord;
         public event Action<Word> Onclick;
         
@@ -37,10 +40,8 @@ namespace Source
         [ContextMenu("Apply Now In Inspector")]
         private void UpdateUiElements()
         {
-            foreach (var cstUiElement in customUiElements)
-            {
-                cstUiElement.Apply();
-            }
+           splitCstUi.Apply();
+           setMaxHeightCstUi.Apply();
         }
 
         private void Click()

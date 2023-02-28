@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NotificationView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NotificationView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/GrayButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/GrayButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -22,16 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "rider.run.widget.enabled.cache": "false",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.3f1\Editor\Unity.exe" />
@@ -72,7 +79,7 @@
       <updated>1677243595679</updated>
       <workItem from="1677243601471" duration="38000" />
       <workItem from="1677257666964" duration="3014000" />
-      <workItem from="1677517914204" duration="613000" />
+      <workItem from="1677517914204" duration="6177000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -88,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677263759888</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactoring">
+      <created>1677565411665</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677565411665</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

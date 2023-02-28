@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+using Lean.Transition;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NotificationView : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Text warningText;
+    [SerializeField] private RectTransform content;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private LeanPlayer OpenTransition;
+    [SerializeField] private LeanPlayer CloseTransition;
+
+    public void ShowWarning(string Warning)
     {
-        
+        OpenTransition.Begin();
+        warningText.text = Warning;
+        LayoutRebuilder.ForceRebuildLayoutImmediate(content);
     }
 }
