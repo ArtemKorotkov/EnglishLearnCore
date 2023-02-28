@@ -41,13 +41,12 @@ namespace Source
 
             AllFolders.OnClickToFolder += WordsFromFolder.DisplayWords;
             CreateFolder.OnCreateFolder += Show;
-
         }
 
         public void Run()
         {
         }
-        
+
         private void Show()
         {
             AllFolders.DisplayFolders(Storage.AllFolders);

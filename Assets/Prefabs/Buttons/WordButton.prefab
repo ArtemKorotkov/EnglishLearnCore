@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754787, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 358.04498
+      value: 344.04498
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754787, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_SizeDelta.y
@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754789, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_Text
-      value: NativeValue
+      value: 'NativeValue '
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754789, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_FontData.m_BestFit
@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754787, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 358.04498
+      value: 344.04498
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754787, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_SizeDelta.y
@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754789, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_Text
-      value: ForeignValue
+      value: NativeValue
       objectReference: {fileID: 0}
     - target: {fileID: 4070324725047754789, guid: 54954e0c0f8a0dc4bb30a0c9ba705816, type: 3}
       propertyPath: m_FontData.m_BestFit
@@ -789,15 +789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb8f4d4b4b642aa82bb9a570cac3e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes: []
   button: {fileID: 4435686396956502147}
   foreignValue: {fileID: 7193970016147208981}
   nativeValue: {fileID: 3760770425892209268}
@@ -918,7 +909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835347948425157124, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00004196167
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 8835347948425157124, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

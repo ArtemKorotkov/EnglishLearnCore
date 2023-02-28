@@ -43,6 +43,7 @@ namespace Source
             }
 
             word.ForeignValue += "1";
+            word.NativeValue += "1";
             _addedWords.Add(word);
             displayWords.AddWord(word);
 
@@ -74,7 +75,8 @@ namespace Source
                 Notification.ShowWarning("Такая папка уже существует");
                 return;
             }
-            Debug.Log("123123");
+
+            _currentFolder.Name = folderName.text;
             Storage.SaveFolder(_currentFolder);
             OnCreateFolder?.Invoke();
         }
