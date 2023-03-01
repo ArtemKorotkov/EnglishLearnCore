@@ -30,18 +30,20 @@ namespace Source
 
         public void DisplayWord(Word word)
         {
+            UpdateUiElements();
             _displayedWord = word;
             foreignValue.text = word.ForeignValue;
             nativeValue.text = word.NativeValue;
             progressImage.SetIcon(word.Progress);
+            UpdateUiElements();
             UpdateUiElements();
         }
 
         [ContextMenu("Apply Now In Inspector")]
         private void UpdateUiElements()
         {
-           splitCstUi.Apply();
-           setMaxHeightCstUi.Apply();
+            splitCstUi.Apply();
+            setMaxHeightCstUi.Apply();
         }
 
         private void Click()

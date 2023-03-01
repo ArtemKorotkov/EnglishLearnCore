@@ -26,7 +26,6 @@ namespace Source
                 Undo.RecordObject(element, "transforms");
             }
 #endif
-
             var maxHeightElement = elements.OrderByDescending(e => e.rect.height).First();
             UtilityUI.SetHeight(target, maxHeightElement.rect.height + indent);
             LayoutRebuilder.ForceRebuildLayoutImmediate(target);

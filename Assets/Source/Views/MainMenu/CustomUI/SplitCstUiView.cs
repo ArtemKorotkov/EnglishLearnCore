@@ -21,7 +21,7 @@ public class SplitCstUiView : MonoBehaviour, ICstUI
             Undo.RecordObject(element, "transforms");
         }
 #endif
-
+        
         var width = maxWidthElement.rect.width / elements.Count;
         
         foreach (var element in elements)
@@ -29,5 +29,6 @@ public class SplitCstUiView : MonoBehaviour, ICstUI
             UtilityUI.SetWidth(element, width - ident);
             LayoutRebuilder.ForceRebuildLayoutImmediate(element);
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(maxWidthElement);
     }
 }

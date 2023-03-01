@@ -11,6 +11,7 @@ namespace Source
         [SerializeField] private RectTransform content;
         [SerializeField] private WordButtonView buttonViewPrefab;
         public event Action<Word> OnClickToWord;
+
         public void Display(Folder folder)
         {
             Clear();
@@ -19,20 +20,18 @@ namespace Source
                 WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
                 wordButtonView.DisplayWord(word);
                 wordButtonView.Onclick += ClickToWord;
-                //LayoutRebuilder.ForceRebuildLayoutImmediate(content);
             }
         }
+
         public void AddWord(Word word)
         {
-            
-                WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
-                wordButtonView.DisplayWord(word);
-                wordButtonView.Onclick += ClickToWord;
-                //LayoutRebuilder.ForceRebuildLayoutImmediate(content);
-            
+            WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
+            wordButtonView.DisplayWord(word);
+            wordButtonView.Onclick += ClickToWord;
+            LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
 
-        private void Clear()
+        public void Clear()
         {
             var childCount = content.childCount;
 

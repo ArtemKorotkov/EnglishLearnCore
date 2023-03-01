@@ -12,14 +12,14 @@ namespace Source
     public class CreateFolderView : CryoBehaviour
     {
         private const int MaxLengthNameFolder = 24;
+        [Dependency] private NotificationView Notification { get; set; }
+        [Dependency] private IStorage Storage { get; set; }
         [SerializeField] private InputField folderName;
         [SerializeField] private LeanButton createFolder;
         [SerializeField] private LeanButton addWordFromSearch;
         [SerializeField] private LeanButton addWordFromFolder;
         [SerializeField] private DisplayWordsView displayWords;
         [SerializeField] private RectTransform content;
-        [Dependency] private NotificationView Notification { get; set; }
-        [Dependency] private IStorage Storage { get; set; }
         public Window window;
         public event Action OnCreateFolder;
 
@@ -75,10 +75,25 @@ namespace Source
                 Notification.ShowWarning("Такая папка уже существует");
                 return;
             }
+            
+            if (_currentFolder.Words.Count <= 0)
+            {
+                Notification.ShowWarning("Вы не добавили слова в папку");
+                return;
+            }
 
             _currentFolder.Name = folderName.text;
             Storage.SaveFolder(_currentFolder);
             OnCreateFolder?.Invoke();
+            
+            Clear();
+        }
+
+        private void Clear()
+        {
+            folderName.text = string.Empty;
+            _addedWords.Clear();
+            displayWords.Clear();
         }
     }
 }

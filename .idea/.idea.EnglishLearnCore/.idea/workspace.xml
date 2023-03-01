@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SetMaxHeightCstUiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SetMaxHeightCstUiView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SplitCstUiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SplitCstUiView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +54,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="25404">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="25404" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -72,7 +76,8 @@
       <workItem from="1677243601471" duration="38000" />
       <workItem from="1677257666964" duration="3014000" />
       <workItem from="1677517914204" duration="13725000" />
-      <workItem from="1677584053742" duration="2516000" />
+      <workItem from="1677584053742" duration="7179000" />
+      <workItem from="1677649433551" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -109,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677583932727</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added create folder">
+      <created>1677586670805</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677586670805</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +147,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value=" Added Notification" />
     <MESSAGE value="added Notifiction" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Notifiction" />
+    <MESSAGE value="Added create folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added create folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
