@@ -76,7 +76,7 @@ namespace Source
                 return;
             }
             
-            if (_currentFolder.Words.Count <= 0)
+            if (_addedWords.Count <= 0)
             {
                 Notification.ShowWarning("Вы не добавили слова в папку");
                 return;
@@ -87,6 +87,8 @@ namespace Source
             OnCreateFolder?.Invoke();
             
             Clear();
+            
+            Notification.ShowGood("Папка успешно создана");
         }
 
         private void Clear()
@@ -94,6 +96,7 @@ namespace Source
             folderName.text = string.Empty;
             _addedWords.Clear();
             displayWords.Clear();
+            _currentFolder = new Folder();
         }
     }
 }
