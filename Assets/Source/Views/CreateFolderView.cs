@@ -87,6 +87,7 @@ namespace Source
             }
 
             _currentFolder.Name = folderName.text;
+            _currentFolder.Date = DateTime.Now;
             Storage.SaveFolder(_currentFolder);
             OnCreateFolder?.Invoke();
             Notification.ShowGood($"Папка: {folderName.text} успешно создана");

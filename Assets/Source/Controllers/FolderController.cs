@@ -6,7 +6,6 @@ namespace Source
 {
     public class FolderController : IController
     {
-        private Folder _folder1;
         [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private IStorage Storage { get; set; }

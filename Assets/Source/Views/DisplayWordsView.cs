@@ -20,6 +20,7 @@ namespace Source
             {
                 WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
                 wordButtonView.DisplayWord(word);
+                wordButtonView.SetMode(mode);
                 wordButtonView.Onclick += ClickToWord;
             }
         }
