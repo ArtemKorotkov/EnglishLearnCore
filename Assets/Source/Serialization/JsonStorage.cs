@@ -1,6 +1,8 @@
 ﻿#region
 
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
@@ -15,25 +17,19 @@ namespace Source.Serialization
 
         private readonly string _directoryPath;
 
-        private List<Folder> _folders;
 
         public JsonStorage()
         {
             _directoryPath = UnityEngine.Application.persistentDataPath + DirectoryName;
-            _folders = LoadAllFolders(_directoryPath);
         }
 
         public List<Folder> AllFolders
         {
-            get => _folders.ToList();
-            private set => _folders = value;
+            get => LoadAllFolders();
         }
 
         public void SaveFolder(Folder folder)
         {
-            _folders.RemoveAll(f => f.Name == folder.Name);
-            _folders.Add(folder);
-
             var filePath = _directoryPath + "/" + folder.Name + ".Json";
             var jsonData = JsonConvert.SerializeObject(folder);
             File.WriteAllText(filePath, jsonData);
@@ -44,18 +40,12 @@ namespace Source.Serialization
             foreach (var folder in folders) SaveFolder(folder);
         }
 
-        public void Update()
+        private List<Folder> LoadAllFolders()
         {
-            _folders = LoadAllFolders(_directoryPath);
-        }
+            if (!Directory.Exists(_directoryPath))
+                Directory.CreateDirectory(_directoryPath);
 
-
-        private List<Folder> LoadAllFolders(string directoryPath)
-        {
-            if (!Directory.Exists(directoryPath))
-                Directory.CreateDirectory(directoryPath);
-
-            var files = Directory.GetFiles(directoryPath);
+            var files = Directory.GetFiles(_directoryPath);
 
             var allFolders = new List<Folder>();
 

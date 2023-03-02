@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="resolved bugs">
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/GoodMessageView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/GoodMessageView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/NotificationView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/NotificationView.cs.meta" afterDir="false" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/ButtonMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/ButtonMode.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NotificationView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WarningMessageView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NotificationView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WarningMessageView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/Notification.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/Notification.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/Word.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/Word/WordButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/Word/WordButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/Word/WordButtonDeliteble.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/Word/WordButtonDeliteble.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/ICstUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/ICstUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/ICstUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/ICstUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SetMaxHeightCstUiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/SetMaxHeightCstUiView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SetMaxHeightCstUiView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/SetMaxHeightCstUiView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SplitCstUiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/SplitCstUiView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/SplitCstUiView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/SplitCstUiView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/UtilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/UtilityUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/CustomUI/UtilityUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/UtilityUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +36,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreateFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,10 +76,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1396">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="1396" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -84,7 +99,8 @@
       <workItem from="1677257666964" duration="3014000" />
       <workItem from="1677517914204" duration="13725000" />
       <workItem from="1677584053742" duration="7179000" />
-      <workItem from="1677649433551" duration="10930000" />
+      <workItem from="1677649433551" duration="21528000" />
+      <workItem from="1677733251012" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -135,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677654011026</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactoring">
+      <created>1677669857649</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677669857649</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,30 +181,11 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="refactorinf" />
-    <MESSAGE value="refactoring" />
     <MESSAGE value=" Added Notification" />
     <MESSAGE value="added Notifiction" />
     <MESSAGE value="Added create folder" />
     <MESSAGE value="resolved bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolved bugs" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs</url>
-          <line>78</line>
-          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\CreateFolderView.cs" initialLine="78" containingFunctionPresentation="method 'CreateFolder'">
-            <startOffsets>
-              <option value="2514" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2541" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
 </project>

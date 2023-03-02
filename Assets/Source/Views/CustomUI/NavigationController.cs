@@ -56,6 +56,7 @@ namespace Source
             AllFolders.OnClickToCreateFolder += () => SetState(typeof(CreateFolderView));
             AllFolders.OnClickToFolder += _ => SetState(typeof(WordsFromFolderView));
             SetWord.OnClickToAddWord += () => SetState(_stateByDefault);
+            CreateFolder.OnCreateFolder += ChangeStateToPrevious;
         }
 
         private void SetState(Type state, bool setPreviousState = true)

@@ -14,6 +14,7 @@ namespace Source
         private const int MaxLengthNameFolder = 24;
         [Dependency] private NotificationView Notification { get; set; }
         [Dependency] private IStorage Storage { get; set; }
+        
         [SerializeField] private InputField folderName;
         [SerializeField] private LeanButton createFolder;
         [SerializeField] private LeanButton addWordFromSearch;
@@ -32,6 +33,7 @@ namespace Source
             addWordFromFolder.OnClick.AddListener(AddWord);
             createFolder.OnClick.AddListener(CreateFolder);
             _addedWords = new List<Word>();
+            displayWords.OnDeletedWord += RemoveWord;
         }
 
         private void AddWord()
@@ -39,13 +41,15 @@ namespace Source
             var word = new Word();
             if (_addedWords.Count != 0)
             {
-                word = _addedWords.Last();
+                word.ForeignValue = _addedWords.Last().ForeignValue;
+                word.NativeValue = _addedWords.Last().NativeValue;
+                word.Progress = _addedWords.Last().Progress;
             }
 
             word.ForeignValue += "1";
             word.NativeValue += "1";
             _addedWords.Add(word);
-            displayWords.AddWord(word);
+            displayWords.AddWord(word, ButtonMode.Deliteble);
 
             var folder = new Folder();
             folder.Words = _addedWords;
@@ -75,7 +79,7 @@ namespace Source
                 Notification.ShowWarning("Такая папка уже существует");
                 return;
             }
-            
+
             if (_addedWords.Count <= 0)
             {
                 Notification.ShowWarning("Вы не добавили слова в папку");
@@ -85,10 +89,8 @@ namespace Source
             _currentFolder.Name = folderName.text;
             Storage.SaveFolder(_currentFolder);
             OnCreateFolder?.Invoke();
-            
+            Notification.ShowGood($"Папка: {folderName.text} успешно создана");
             Clear();
-            
-            Notification.ShowGood("Папка успешно создана");
         }
 
         private void Clear()
@@ -97,6 +99,13 @@ namespace Source
             _addedWords.Clear();
             displayWords.Clear();
             _currentFolder = new Folder();
+        }
+
+        private void RemoveWord(Word word)
+        {
+            _addedWords.Remove(word);
+            _currentFolder.Words.Remove(word);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
     }
 }

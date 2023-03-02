@@ -11,8 +11,9 @@ namespace Source
         [SerializeField] private RectTransform content;
         [SerializeField] private WordButtonView buttonViewPrefab;
         public event Action<Word> OnClickToWord;
+        public event Action<Word> OnDeletedWord;
 
-        public void Display(Folder folder)
+        public void Display(Folder folder, ButtonMode mode = ButtonMode.Base)
         {
             Clear();
             foreach (var word in folder.Words.ToList())
@@ -23,11 +24,13 @@ namespace Source
             }
         }
 
-        public void AddWord(Word word)
+        public void AddWord(Word word, ButtonMode mode = ButtonMode.Base)
         {
             WordButtonView wordButtonView = Instantiate(buttonViewPrefab, content, false);
             wordButtonView.DisplayWord(word);
+            wordButtonView.SetMode(mode);
             wordButtonView.Onclick += ClickToWord;
+            wordButtonView.OnDelete += DeleteWord;
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
 
@@ -45,5 +48,10 @@ namespace Source
         {
             OnClickToWord?.Invoke(word);
         }
+        private void DeleteWord(Word word)
+        {
+            OnDeletedWord?.Invoke(word);
+        }
+        
     }
 }
