@@ -9,57 +9,67 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class CreateFolderView : CryoBehaviour
+    public class CreatorFolderView : CryoBehaviour
     {
         private const int MaxLengthNameFolder = 24;
         [Dependency] private NotificationView Notification { get; set; }
-        [Dependency] private IStorage Storage { get; set; }
-        
-        [SerializeField] private InputField folderName;
-        [SerializeField] private LeanButton createFolder;
-        [SerializeField] private LeanButton addWordFromSearch;
-        [SerializeField] private LeanButton addWordFromFolder;
+
+
+        [SerializeField] private InputField folderNameInput;
+        [SerializeField] private LeanButton createFolderButton;
+        [SerializeField] private LeanButton addWordFromSearchButton;
+        [SerializeField] private LeanButton addWordFromFolderButton;
         [SerializeField] private DisplayWordsView displayWords;
         [SerializeField] private RectTransform content;
-        public Window window;
-        public event Action OnCreateFolder;
 
-        private List<Word> _addedWords;
-        private Folder _currentFolder;
+        private Folder _createdFolder;
+        private List<String> _foldersName;
+
+        public Window window;
+        public event Action<Folder> OnCreateFolder;
+
+        public void SetFoldersName(List<string> foldersName)
+        {
+            _foldersName = foldersName;
+        }
 
         private void Start()
         {
-            addWordFromSearch.OnClick.AddListener(AddWord);
-            addWordFromFolder.OnClick.AddListener(AddWord);
-            createFolder.OnClick.AddListener(CreateFolder);
-            _addedWords = new List<Word>();
+            _createdFolder ??= new Folder();
+            _createdFolder.Words ??= new List<Word>();
+            
+            addWordFromSearchButton.OnClick.AddListener(AddWord);
+            addWordFromFolderButton.OnClick.AddListener(AddWord);
+            createFolderButton.OnClick.AddListener(Create);
+
             displayWords.OnDeletedWord += RemoveWord;
         }
 
         private void AddWord()
         {
             var word = new Word();
-            if (_addedWords.Count != 0)
+
+            if (_createdFolder.Words.Count != 0)
             {
-                word.ForeignValue = _addedWords.Last().ForeignValue;
-                word.NativeValue = _addedWords.Last().NativeValue;
-                word.Progress = _addedWords.Last().Progress;
+                var lastWord = _createdFolder.Words.Last();
+
+                word.ForeignValue = lastWord.ForeignValue;
+                word.NativeValue = lastWord.NativeValue;
+                word.Progress = lastWord.Progress;
             }
 
             word.ForeignValue += "1";
             word.NativeValue += "1";
-            _addedWords.Add(word);
+
+            _createdFolder.Words.Add(word);
             displayWords.AddWord(word, ButtonMode.Deliteble);
 
-            var folder = new Folder();
-            folder.Words = _addedWords;
-            _currentFolder = folder;
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
 
-        private void CreateFolder()
+        private void Create()
         {
-            var folderNameLength = folderName.text.Length;
+            var folderNameLength = folderNameInput.text.Length;
 
             if (folderNameLength >= MaxLengthNameFolder)
             {
@@ -74,38 +84,37 @@ namespace Source
                 return;
             }
 
-            if (Storage.AllFolders.Any(folder => folder.Name == folderName.text))
+            if (_foldersName.Any(folder => folder == folderNameInput.text))
             {
                 Notification.ShowWarning("Такая папка уже существует");
                 return;
             }
 
-            if (_addedWords.Count <= 0)
+            if (_createdFolder.Words.Count <= 0)
             {
                 Notification.ShowWarning("Вы не добавили слова в папку");
                 return;
             }
 
-            _currentFolder.Name = folderName.text;
-            _currentFolder.Date = DateTime.Now;
-            Storage.SaveFolder(_currentFolder);
-            OnCreateFolder?.Invoke();
-            Notification.ShowGood($"Папка: {folderName.text} успешно создана");
+            _createdFolder.Name = folderNameInput.text;
+            _createdFolder.Date = DateTime.Now;
+            OnCreateFolder?.Invoke(_createdFolder);
+            Notification.ShowGood($"Папка: {folderNameInput.text} успешно создана");
             Clear();
         }
 
         private void Clear()
         {
-            folderName.text = string.Empty;
-            _addedWords.Clear();
+            folderNameInput.text = string.Empty;
             displayWords.Clear();
-            _currentFolder = new Folder();
+            
+            _createdFolder = new Folder();
+            _createdFolder.Words = new List<Word>();
         }
 
         private void RemoveWord(Word word)
         {
-            _addedWords.Remove(word);
-            _currentFolder.Words.Remove(word);
+            _createdFolder.Words.Remove(word);
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
     }

@@ -14,12 +14,12 @@ namespace Source
 
             container.RegisterSceneObject<SearchWordView>("Canvases/SearchWord", LifeTime.Scene);
             container.RegisterSceneObject<MainMenuView>("Canvases/MainMenu", LifeTime.Scene);
-            container.RegisterSceneObject<SetWordView>("Canvases/SetWord", LifeTime.Scene);
             container.RegisterSceneObject<AllFoldersView>("Canvases/AllFolders", LifeTime.Scene);
             container.RegisterSceneObject<WordsFromFolderView>("Canvases/WordsFromFolder", LifeTime.Scene);
-            container.RegisterSceneObject<CreateFolderView>("Canvases/CreateFolder", LifeTime.Scene);
+            container.RegisterSceneObject<CreatorFolderView>("Canvases/CreateFolder", LifeTime.Scene);
             container.RegisterSceneObject<NotificationView>("Canvases/Notification", LifeTime.Scene);
-            
+            container.RegisterSceneObject<CreateWordView>("Canvases/CreateWord", LifeTime.Scene);
+            container.RegisterSceneObject<SelectFolderView>("Canvases/SelectFolder", LifeTime.Scene);
 
             ViewContainer = container;
         }

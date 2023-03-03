@@ -682,10 +682,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8732d8b64e314056a4944dfb8017ee60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  folderName: {fileID: 614880124124058116}
-  createFolder: {fileID: 7095383737613151843}
-  addWordFromSearch: {fileID: 8177014897795472659}
-  addWordFromFolder: {fileID: 7758790081180267354}
+  folderNameInput: {fileID: 614880124124058116}
+  createFolderButton: {fileID: 7095383737613151843}
+  addWordFromSearchButton: {fileID: 8177014897795472659}
+  addWordFromFolderButton: {fileID: 7758790081180267354}
   displayWords: {fileID: 129312978568529434}
   content: {fileID: 6178534039908482868}
   window: {fileID: 6918249781301377514}

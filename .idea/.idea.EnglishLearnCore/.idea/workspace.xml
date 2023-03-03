@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Refactoring">
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="order by data">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateWordView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateWordView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SetWord.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SetWord.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SetWordView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SetWordView.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +92,8 @@
       <workItem from="1677517914204" duration="13725000" />
       <workItem from="1677584053742" duration="7179000" />
       <workItem from="1677649433551" duration="21528000" />
-      <workItem from="1677733251012" duration="4346000" />
+      <workItem from="1677733251012" duration="17421000" />
+      <workItem from="1677828102096" duration="5240000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -146,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677733855368</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="order by data">
+      <created>1677738172352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677738172352</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +194,7 @@
     <MESSAGE value="resolved bugs" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="order by data" />
+    <option name="LAST_COMMIT_MESSAGE" value="order by data" />
   </component>
 </project>

@@ -18,11 +18,13 @@ namespace Source
 
         public event Action OnClickToSearchWord;
         public event Action OnClickToAllWords;
+        public event Action OnClickToAddNewWord;
 
         private void Start()
         {
             searchWord.OnClick.AddListener(ClickToSearchWord);
             allWords.OnClick.AddListener(ClickToAllWords);
+            addNewWord.OnClick.AddListener(ClickToAddNewWord);
         }
 
         private void ClickToSearchWord()
@@ -33,6 +35,10 @@ namespace Source
         private void ClickToAllWords()
         {
             OnClickToAllWords?.Invoke();
+        }
+        private void ClickToAddNewWord()
+        {
+            OnClickToAddNewWord?.Invoke();
         }
     }
 }
