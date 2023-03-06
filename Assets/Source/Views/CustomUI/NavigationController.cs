@@ -13,8 +13,9 @@ namespace Source
         [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private CreatorFolderView CreatorFolder { get; set; }
-        [Dependency] private CreateWordView CreatorWords { get; set; }
+        [Dependency] private CreatorWordView CreatorWords { get; set; }
         [Dependency] private SelectFolderView SelectFolder { get; set; }
+        [Dependency] private WordContentView WordContent { get; set; }
 
 
         private Type _currentState;
@@ -37,8 +38,9 @@ namespace Source
                 [typeof(AllFoldersView)] = AllFolders.window,
                 [typeof(WordsFromFolderView)] = WordsFromFolder.window,
                 [typeof(CreatorFolderView)] = CreatorFolder.window,
-                [typeof(CreateWordView)] = CreatorWords.window,
-                [typeof(SelectFolderView)] = SelectFolder.window
+                [typeof(CreatorWordView)] = CreatorWords.window,
+                [typeof(SelectFolderView)] = SelectFolder.window,
+                [typeof(WordContentView)] = WordContent.window
             };
 
             _mapPreviousStates = new Dictionary<Type, Type>();
@@ -54,17 +56,19 @@ namespace Source
 
             MainMenu.dictFunctions.OnClickToSearchWord += () => SetState(typeof(SearchWordView));
             MainMenu.dictFunctions.OnClickToAllWords += () => SetState(typeof(AllFoldersView));
-            MainMenu.dictFunctions.OnClickToAddNewWord += () => SetState(typeof(CreateWordView));
-            SearchWord.OnClickToSetWord += () => SetState(typeof(CreateWordView));
+            MainMenu.dictFunctions.OnClickToAddNewWord += () => SetState(typeof(CreatorWordView));
+            SearchWord.OnClickToSetWord += () => SetState(typeof(CreatorWordView));
             AllFolders.OnClickToCreateFolder += () => SetState(typeof(CreatorFolderView));
             AllFolders.OnClickToFolder += _ => SetState(typeof(WordsFromFolderView));
             CreatorFolder.OnCreateFolder += _ => ChangeStateToPrevious();
-            CreatorWords.OnClickToSelectFolder += () => SetState(typeof(SelectFolderView));
-            CreatorWords.OnCreateWord += ChangeStateToPrevious;
+            CreatorWords.OnClickToSelectFolderButton += () => SetState(typeof(SelectFolderView));
+            CreatorWords.OnCreateWord += (_,_) => ChangeStateToPrevious();
             SelectFolder.OnClickToFolder += _ => ChangeStateToPrevious();
+            WordsFromFolder.OnClickToWord += (_,_) => SetState(typeof(WordContentView));
+            
         }
 
-        private void SetState(Type state, bool setPreviousState = true)
+        public void SetState(Type state, bool setPreviousState = true)
         {
             if (setPreviousState)
             {
@@ -80,7 +84,7 @@ namespace Source
         {
         }
 
-        private void ChangeStateToPrevious()
+        public void ChangeStateToPrevious()
         {
             var prevState = _mapPreviousStates[_currentState];
             SetState(prevState, false);

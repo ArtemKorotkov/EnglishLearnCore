@@ -8,12 +8,10 @@ using UnityEngine.UI;
 
 namespace Source
 {
-    public class CreateWordView : CryoBehaviour
+    public class CreatorWordView : CryoBehaviour
 
     {
         [Dependency] private NotificationView Notification { get; set; }
-        [Dependency] private IStorage Storage { get; set; }
-        [Dependency] private SelectFolderView selectFolder { get; set; }
 
         [SerializeField] private LeanButton createWordButton;
         [SerializeField] private LeanButton selectFolderButton;
@@ -22,8 +20,8 @@ namespace Source
         [SerializeField] private Text selectFolderText;
 
         public Window window;
-        public event Action OnCreateWord;
-        public event Action OnClickToSelectFolder;
+        public event Action<Word,Folder> OnCreateWord;
+        public event Action OnClickToSelectFolderButton;
 
 
         private Word _currentWord;
@@ -32,28 +30,20 @@ namespace Source
         private void Start()
         {
             createWordButton.OnClick.AddListener(CreateWord);
-            selectFolderButton.OnClick.AddListener(ClickToSelectFolder);
-            selectFolder.OnClickToFolder += SelectFolder;
-            SelectFolderByDefault();
-        }
-
-
-        private void SelectFolderByDefault()
-        {
-            var allFolders = Storage.AllFolders;
-            _selectedFolder = allFolders.OrderByDescending(folder => folder.Date).FirstOrDefault();
-            selectFolderText.text = $"Папка по умолчанию: {_selectedFolder.Name}";
-        }
-        private void SelectFolder(Folder folder)
-        {
+            selectFolderButton.OnClick.AddListener(ClickToSelectFolderButton);
             
+        }
+
+
+        public void SelectFolder(Folder folder)
+        {
             _selectedFolder = folder;
             selectFolderText.text = $"Папка по умолчанию: {_selectedFolder.Name}";
         }
 
-        private void ClickToSelectFolder()
+        private void ClickToSelectFolderButton()
         {
-            OnClickToSelectFolder?.Invoke();
+            OnClickToSelectFolderButton?.Invoke();
         }
 
         private void CreateWord()
@@ -76,10 +66,8 @@ namespace Source
                 NativeValue = nativeNameInput.text,
                 Progress = Progress.InProgress
             };
-
-            _selectedFolder.Words.Add(_currentWord);
-            Storage.SaveFolder(_selectedFolder);
-            OnCreateWord.Invoke();
+            
+            OnCreateWord.Invoke(_currentWord,_selectedFolder);
             Notification.ShowGood(
                 $"Слово: {_currentWord.NativeValue} Успешно добавлено  в папку {_selectedFolder.Name}");
             Clear();

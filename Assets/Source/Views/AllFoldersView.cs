@@ -25,8 +25,7 @@ namespace Source
 
         public void DisplayFolders(List<Folder> folders)
         {
-            // по умолчанию стоит сортировка по дате
-            displayFolders.Display(folders.OrderByDescending(folder => folder.Date).ToList());
+            displayFolders.Display(folders);
         }
 
         private void ClickToFolder(Folder folder)
