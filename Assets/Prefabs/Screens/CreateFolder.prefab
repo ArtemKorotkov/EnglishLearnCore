@@ -361,17 +361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971a80afb0d16944fb678972c186dcb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8177014897795472659 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3905869341676721410, guid: e213a3873abb2e643add56fed3833df9, type: 3}
-  m_PrefabInstance: {fileID: 5138317732883187729}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81fef0563e898f74f87bcb68d10688aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5449142232304865595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,7 +673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   folderNameInput: {fileID: 614880124124058116}
   createFolderButton: {fileID: 7095383737613151843}
-  addWordFromSearchButton: {fileID: 8177014897795472659}
+  addNewWordButton: {fileID: 7758790081180267354}
   addWordFromFolderButton: {fileID: 7758790081180267354}
   displayWords: {fileID: 129312978568529434}
   content: {fileID: 6178534039908482868}

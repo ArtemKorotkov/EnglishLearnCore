@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
@@ -14,7 +13,6 @@ namespace Source
         public Window window;
         public event Action OnClickToCreateFolder;
         public event Action<Folder> OnClickToFolder;
-        
 
 
         private void Start()

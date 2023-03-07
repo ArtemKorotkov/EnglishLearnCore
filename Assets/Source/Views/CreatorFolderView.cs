@@ -17,7 +17,7 @@ namespace Source
 
         [SerializeField] private InputField folderNameInput;
         [SerializeField] private LeanButton createFolderButton;
-        [SerializeField] private LeanButton addWordFromSearchButton;
+        [SerializeField] private LeanButton addNewWordButton;
         [SerializeField] private LeanButton addWordFromFolderButton;
         [SerializeField] private DisplayWordsView displayWords;
         [SerializeField] private RectTransform content;
@@ -27,6 +27,8 @@ namespace Source
 
         public Window window;
         public event Action<Folder> OnCreateFolder;
+        public event Action OnClickToSelectWordFromFolder;
+        public event Action OnClickToAddNewWord;
 
         public void SetFoldersName(List<string> foldersName)
         {
@@ -37,30 +39,17 @@ namespace Source
         {
             _createdFolder ??= new Folder();
             _createdFolder.Words ??= new List<Word>();
+
+            addNewWordButton.OnClick.AddListener(() => OnClickToAddNewWord?.Invoke());
+            addWordFromFolderButton.OnClick.AddListener(() => OnClickToSelectWordFromFolder?.Invoke());
             
-            addWordFromSearchButton.OnClick.AddListener(AddWord);
-            addWordFromFolderButton.OnClick.AddListener(AddWord);
             createFolderButton.OnClick.AddListener(Create);
 
             displayWords.OnDeletedWord += RemoveWord;
         }
 
-        private void AddWord()
+        public void AddWord(Word word)
         {
-            var word = new Word();
-
-            if (_createdFolder.Words.Count != 0)
-            {
-                var lastWord = _createdFolder.Words.Last();
-
-                word.ForeignValue = lastWord.ForeignValue;
-                word.NativeValue = lastWord.NativeValue;
-                word.Progress = lastWord.Progress;
-            }
-
-            word.ForeignValue += "1";
-            word.NativeValue += "1";
-
             _createdFolder.Words.Add(word);
             displayWords.AddWord(word, ButtonMode.Deliteble);
 

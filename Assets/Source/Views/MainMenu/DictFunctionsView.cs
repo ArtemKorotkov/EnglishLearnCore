@@ -17,7 +17,7 @@ namespace Source
         [SerializeField] private LeanButton repeatWords;
 
         public event Action OnClickToSearchWord;
-        public event Action OnClickToAllWords;
+        public event Action OnClickToAllFolders;
         public event Action OnClickToAddNewWord;
 
         private void Start()
@@ -34,7 +34,7 @@ namespace Source
 
         private void ClickToAllWords()
         {
-            OnClickToAllWords?.Invoke();
+            OnClickToAllFolders?.Invoke();
         }
         private void ClickToAddNewWord()
         {

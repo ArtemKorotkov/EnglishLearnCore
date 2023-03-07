@@ -1,32 +1,42 @@
 ﻿using System.Linq;
 using CryoDI;
+using Source.MainScen;
 using Source.Serialization;
+using Source.Services;
 
 namespace Source
 {
     public class WordController : IController
 
     {
+        [Dependency] private MainMenuView MainMenu { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private CreatorWordView CreatorWord { get; set; }
         [Dependency] private SelectFolderView SelectFolder { get; set; }
-        [Dependency] private WordContentView WordContent { get; set; }
         [Dependency] private IStorage Storage { get; set; }
+        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
+        [Dependency] private SearchWordView SearchWord { get; set; }
+
+
         private Folder _folderByDefault;
 
         public void Init()
         {
-            Storage.OnUpdate += Init;
             _folderByDefault = Storage.AllFolders.FirstOrDefault();
 
-            CreatorWord.window.OnShow += RefreshCreatorFolder;
-            SelectFolder.window.OnShow += RefreshSelectFolder;
-            
-            SelectFolder.OnClickToFolder += CreatorWord.SelectFolder;
-            SelectFolder.OnClickToFolder += SetFolderByDefault;
+            MainMenu.dictFunctions.OnClickToSearchWord += () => ScreenChanger.SetScreen(typeof(SearchWordView));
+            MainMenu.dictFunctions.OnClickToAddNewWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
+
+            SearchWord.OnClickToCreateWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
+
+            CreatorWord.window.OnShow += CreatorWordInit;
+            CreatorWord.OnClickToSelectFolderButton += () => ScreenChanger.SetScreen(typeof(SelectFolderView));
+            CreatorWord.OnCreateWord += (_, _) => ScreenChanger.SetPreviousScreen();
             CreatorWord.OnCreateWord += SaveWord;
 
-            WordsFromFolder.OnClickToWord += WordContent.Display;
+            SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
+            
+            Storage.OnUpdate += () => SetFolderByDefault(Storage.AllFolders.FirstOrDefault());
         }
 
         public void Run()
@@ -38,14 +48,15 @@ namespace Source
             _folderByDefault = folder;
         }
 
-        private void RefreshSelectFolder()
-        {
-            SelectFolder.DisplayFolders(Storage.AllFolders);
-        }
 
-        private void RefreshCreatorFolder()
+        private void CreatorWordInit()
         {
             CreatorWord.SelectFolder(_folderByDefault);
+
+            SelectFolder.OnClickToFolder.RemoveAllListeners();
+            SelectFolder.OnClickToFolder.AddListener(CreatorWord.SelectFolder);
+            SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
+            SelectFolder.OnClickToFolder.AddListener((_) => ScreenChanger.SetPreviousScreen());
         }
 
         private void SaveWord(Word word, Folder folder)

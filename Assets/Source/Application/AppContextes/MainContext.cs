@@ -1,6 +1,7 @@
 ﻿using CryoDI;
 using Source.MainScen;
 using Source.Serialization;
+using Source.Services;
 
 namespace Source
 {
@@ -11,6 +12,7 @@ namespace Source
         protected override void SetupContainer(CryoContainer container)
         {
             container.RegisterSingleton<IStorage, JsonStorage>();
+            container.RegisterSingleton<ScreenChangerService>();
 
             container.RegisterSceneObject<SearchWordView>("Canvases/SearchWord", LifeTime.Scene);
             container.RegisterSceneObject<MainMenuView>("Canvases/MainMenu", LifeTime.Scene);

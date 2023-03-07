@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Source.MainScen;
 using UnityEngine;
 using CryoDI;
+using Source.Services;
 
 namespace Source
 {
@@ -16,6 +17,7 @@ namespace Source
         [Dependency] private CreatorWordView CreatorWords { get; set; }
         [Dependency] private SelectFolderView SelectFolder { get; set; }
         [Dependency] private WordContentView WordContent { get; set; }
+        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
 
 
         private Type _currentState;
@@ -54,21 +56,11 @@ namespace Source
             SetState(_stateByDefault);
             SetDefaultPreviousState(_stateByDefault);
 
-            MainMenu.dictFunctions.OnClickToSearchWord += () => SetState(typeof(SearchWordView));
-            MainMenu.dictFunctions.OnClickToAllWords += () => SetState(typeof(AllFoldersView));
-            MainMenu.dictFunctions.OnClickToAddNewWord += () => SetState(typeof(CreatorWordView));
-            SearchWord.OnClickToSetWord += () => SetState(typeof(CreatorWordView));
-            AllFolders.OnClickToCreateFolder += () => SetState(typeof(CreatorFolderView));
-            AllFolders.OnClickToFolder += _ => SetState(typeof(WordsFromFolderView));
-            CreatorFolder.OnCreateFolder += _ => ChangeStateToPrevious();
-            CreatorWords.OnClickToSelectFolderButton += () => SetState(typeof(SelectFolderView));
-            CreatorWords.OnCreateWord += (_,_) => ChangeStateToPrevious();
-            SelectFolder.OnClickToFolder += _ => ChangeStateToPrevious();
-            WordsFromFolder.OnClickToWord += (_,_) => SetState(typeof(WordContentView));
-            
+            ScreenChanger.OnSetState += SetState;
+            ScreenChanger.OnSetPreviousState += ChangeStateToPrevious;
         }
 
-        public void SetState(Type state, bool setPreviousState = true)
+        private void SetState(Type state, bool setPreviousState = true)
         {
             if (setPreviousState)
             {
@@ -84,7 +76,7 @@ namespace Source
         {
         }
 
-        public void ChangeStateToPrevious()
+        private void ChangeStateToPrevious()
         {
             var prevState = _mapPreviousStates[_currentState];
             SetState(prevState, false);

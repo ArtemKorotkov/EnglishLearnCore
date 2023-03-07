@@ -17,11 +17,11 @@ namespace Source
         }
 
 
-        public event Action OnClickToSetWord;
+        public event Action OnClickToCreateWord;
 
         private void ClickToSetWord()
         {
-            OnClickToSetWord?.Invoke();
+            OnClickToCreateWord?.Invoke();
         }
     }
 }

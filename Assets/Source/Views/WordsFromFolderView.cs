@@ -1,6 +1,7 @@
 ﻿using System;
 using Source.Serialization;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Source
 {
@@ -9,7 +10,7 @@ namespace Source
         [SerializeField] private DisplayWordsView displayWords;
         private Folder _folder;
         public Window window;
-        public event Action<Word,Folder> OnClickToWord;
+        public UnityEvent<Word,Folder> OnClickToWord;
 
         private void Start()
         {
