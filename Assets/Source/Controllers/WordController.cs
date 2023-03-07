@@ -26,13 +26,10 @@ namespace Source
 
             MainMenu.dictFunctions.OnClickToSearchWord += () => ScreenChanger.SetScreen(typeof(SearchWordView));
             MainMenu.dictFunctions.OnClickToAddNewWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
+            MainMenu.dictFunctions.OnClickToAddNewWord += CreatorWordInit;
 
             SearchWord.OnClickToCreateWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
-
-            CreatorWord.window.OnShow += CreatorWordInit;
-            CreatorWord.OnClickToSelectFolderButton += () => ScreenChanger.SetScreen(typeof(SelectFolderView));
-            CreatorWord.OnCreateWord += (_, _) => ScreenChanger.SetPreviousScreen();
-            CreatorWord.OnCreateWord += SaveWord;
+            
 
             SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
             
@@ -57,6 +54,14 @@ namespace Source
             SelectFolder.OnClickToFolder.AddListener(CreatorWord.SelectFolder);
             SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
             SelectFolder.OnClickToFolder.AddListener((_) => ScreenChanger.SetPreviousScreen());
+            
+            CreatorWord.OnCreateWord.RemoveAllListeners();
+            CreatorWord.OnCreateWord.AddListener( (_, _) => ScreenChanger.SetPreviousScreen());
+            CreatorWord.OnCreateWord.AddListener(SaveWord);
+            
+            CreatorWord.OnClickToSelectFolderButton.AddListener(() => ScreenChanger.SetScreen(typeof(SelectFolderView)));
+            
+            
         }
 
         private void SaveWord(Word word, Folder folder)

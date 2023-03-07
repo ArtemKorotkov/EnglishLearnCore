@@ -3,6 +3,7 @@ using CryoDI;
 using Source.MainScen;
 using Source.Serialization;
 using Source.Services;
+using UnityEngine;
 
 
 namespace Source
@@ -18,12 +19,13 @@ namespace Source
         [Dependency] private SelectFolderView SelectFolder { get; set; }
         [Dependency] private MainMenuView MainMenu { get; set; }
         [Dependency] private WordContentView WordContent { get; set; }
+        [Dependency] private CreatorWordView CreatorWord { get; set; }
 
 
         public void Init()
         {
             MainMenu.dictFunctions.OnClickToAllFolders += () => ScreenChanger.SetScreen(typeof(AllFoldersView));
-            
+
             AllFolders.window.OnShow += AllFoldersInit;
             AllFolders.OnClickToFolder += (_) => ScreenChanger.SetScreen(typeof(WordsFromFolderView));
             AllFolders.OnClickToFolder += WordsFromFolder.DisplayWords;
@@ -32,6 +34,8 @@ namespace Source
 
             CreatorFolder.window.OnShow += CreateFolderInit;
             CreatorFolder.OnClickToSelectWordFromFolder += () => ScreenChanger.SetScreen(typeof(SelectFolderView));
+            CreatorFolder.OnClickToAddNewWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
+            CreatorFolder.OnClickToAddNewWord += () => { Debug.Log("hello"); };
             CreatorFolder.OnCreateFolder += CreateFolder;
             CreatorFolder.OnCreateFolder += _ => ScreenChanger.SetPreviousScreen();
 
@@ -46,7 +50,7 @@ namespace Source
             WordsFromFolder.OnClickToWord.RemoveAllListeners();
 
             WordsFromFolder.OnClickToWord.AddListener((_, _) => ScreenChanger.SetScreen(typeof(WordContentView)));
-            WordsFromFolder.OnClickToWord.AddListener( WordContent.Display);
+            WordsFromFolder.OnClickToWord.AddListener(WordContent.Display);
         }
 
         private void CreateFolderInit()
@@ -60,7 +64,15 @@ namespace Source
 
             WordsFromFolder.OnClickToWord.RemoveAllListeners();
             WordsFromFolder.OnClickToWord.AddListener((word, _) => CreatorFolder.AddWord(word));
-            WordsFromFolder.OnClickToWord.AddListener((_, _) => ScreenChanger.SetScreen(typeof(CreatorFolderView), false));
+            WordsFromFolder.OnClickToWord.AddListener((_, _) =>
+                ScreenChanger.SetScreen(typeof(CreatorFolderView), false));
+
+            CreatorWord.OnCreateWord.RemoveAllListeners();
+            var emptyFolder = new Folder();
+            emptyFolder.Name = "------";
+            CreatorWord.SelectFolder(emptyFolder);
+            CreatorWord.OnCreateWord.AddListener((word, _) => CreatorFolder.AddWord(word));
+            CreatorWord.OnCreateWord.AddListener((_, _) => ScreenChanger.SetPreviousScreen());
         }
 
         public void Run()

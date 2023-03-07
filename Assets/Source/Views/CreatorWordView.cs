@@ -3,6 +3,7 @@ using CryoDI;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Source
@@ -19,8 +20,8 @@ namespace Source
         [SerializeField] private Text selectFolderText;
 
         public Window window;
-        public event Action<Word,Folder> OnCreateWord;
-        public event Action OnClickToSelectFolderButton;
+        public UnityEvent<Word, Folder> OnCreateWord;
+        public UnityEvent OnClickToSelectFolderButton;
 
 
         private Word _currentWord;
@@ -30,7 +31,6 @@ namespace Source
         {
             createWordButton.OnClick.AddListener(CreateWord);
             selectFolderButton.OnClick.AddListener(ClickToSelectFolderButton);
-            
         }
 
 
@@ -49,13 +49,13 @@ namespace Source
         {
             if (nativeNameInput.text.Length <= 0)
             {
-                Notification.ShowWarning("Введите слово на Русском ");
+                Notification.ShowWarning("Введите слово на Русском");
                 return;
             }
 
             if (foreignNameInput.text.Length <= 0)
             {
-                Notification.ShowWarning("Введите слово на Английском ");
+                Notification.ShowWarning("Введите слово на Английском");
                 return;
             }
 
@@ -65,8 +65,8 @@ namespace Source
                 NativeValue = nativeNameInput.text,
                 Progress = Progress.InProgress
             };
-            
-            OnCreateWord.Invoke(_currentWord,_selectedFolder);
+
+            OnCreateWord.Invoke(_currentWord, _selectedFolder);
             Notification.ShowGood(
                 $"Слово: {_currentWord.NativeValue} Успешно добавлено  в папку {_selectedFolder.Name}");
             Clear();

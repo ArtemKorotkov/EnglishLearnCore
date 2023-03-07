@@ -318,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282834450173735243, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_Name
-      value: AddFromSearch
+      value: AddNewWord
       objectReference: {fileID: 0}
     - target: {fileID: 8282834450173735243, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_IsActive
@@ -359,6 +359,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 971a80afb0d16944fb678972c186dcb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8177014897795472659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3905869341676721410, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+  m_PrefabInstance: {fileID: 5138317732883187729}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fef0563e898f74f87bcb68d10688aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &5449142232304865595
@@ -673,7 +684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   folderNameInput: {fileID: 614880124124058116}
   createFolderButton: {fileID: 7095383737613151843}
-  addNewWordButton: {fileID: 7758790081180267354}
+  addNewWordButton: {fileID: 8177014897795472659}
   addWordFromFolderButton: {fileID: 7758790081180267354}
   displayWords: {fileID: 129312978568529434}
   content: {fileID: 6178534039908482868}
@@ -1150,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8697638265298407931, guid: 2e12ca8d6eaca3b4e8397bd15efe1141, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 129.00002
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 8697638265298407931, guid: 2e12ca8d6eaca3b4e8397bd15efe1141, type: 3}
       propertyPath: m_AnchoredPosition.y

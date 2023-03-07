@@ -864,6 +864,12 @@ MonoBehaviour:
   foreignNameInput: {fileID: 4266143430814289620}
   selectFolderText: {fileID: 3414109308709563773}
   window: {fileID: 4851845781956587458}
+  OnCreateWord:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClickToSelectFolderButton:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &9137551364295209072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -876,9 +882,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 723235a560f796b408ccf71c55b7dbde, type: 3}
     - target: {fileID: 3905869341676721410, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905869341676721410, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 673838061334366085}
+    - target: {fileID: 3905869341676721410, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+      propertyPath: expectedInteractable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4411842534958091033, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1011,6 +1025,18 @@ PrefabInstance:
     - target: {fileID: 8282834450173735243, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_Name
       value: SelectFolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617337342749489141, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617337342749489141, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617337342749489141, guid: e213a3873abb2e643add56fed3833df9, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6156863
       objectReference: {fileID: 0}
     - target: {fileID: 8686735364800878474, guid: e213a3873abb2e643add56fed3833df9, type: 3}
       propertyPath: m_AnchorMax.y

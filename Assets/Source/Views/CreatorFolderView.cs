@@ -48,6 +48,8 @@ namespace Source
             displayWords.OnDeletedWord += RemoveWord;
         }
 
+        
+
         public void AddWord(Word word)
         {
             _createdFolder.Words.Add(word);
