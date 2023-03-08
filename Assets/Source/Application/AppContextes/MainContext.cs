@@ -13,7 +13,6 @@ namespace Source
         {
             container.RegisterSingleton<IStorage, JsonStorage>();
             container.RegisterSingleton<ScreenChangerService>();
-
             container.RegisterSceneObject<SearchWordView>("Canvases/SearchWord", LifeTime.Scene);
             container.RegisterSceneObject<MainMenuView>("Canvases/MainMenu", LifeTime.Scene);
             container.RegisterSceneObject<AllFoldersView>("Canvases/AllFolders", LifeTime.Scene);
@@ -23,6 +22,7 @@ namespace Source
             container.RegisterSceneObject<CreatorWordView>("Canvases/CreateWord", LifeTime.Scene);
             container.RegisterSceneObject<SelectFolderView>("Canvases/SelectFolder", LifeTime.Scene);
             container.RegisterSceneObject<WordContentView>("Canvases/WordContent", LifeTime.Scene);
+            container.RegisterSceneObject<SelectWordsView>("Canvases/SelectWords", LifeTime.Scene);
 
             ViewContainer = container;
         }

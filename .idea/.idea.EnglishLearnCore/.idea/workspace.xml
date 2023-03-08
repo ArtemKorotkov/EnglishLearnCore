@@ -1,15 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="added dislayed words">
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragCamera.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTrail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTrail.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTrail.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanDragTranslate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerDown.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerFilter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerOld.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerOld.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerOld.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerOld.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerSwipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerSwipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerSwipe.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerSwipe.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerTap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanFingerUpdate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanPinchScale.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanPinchScale.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanPinchScale.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanPinchScale.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenDepth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenDepth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenDepth.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenDepth.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanScreenQuery.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectByFinger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFinger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFinger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFinger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFinger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFingerBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFingerBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFingerBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSelectableByFingerBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSwipeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSwipeBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSwipeBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanSwipeBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTouchSimulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTouchSimulator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTouchSimulator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTouchSimulator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Extras/Scripts/LeanTwistRotateAxis.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/GUIDE.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/GUIDE.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/GUIDE.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/GUIDE.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/LeanTouch.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/LeanTouch.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/LeanTouch.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/LeanTouch.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Documentation.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Documentation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Documentation.html.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Documentation.html.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanFinger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanFinger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanFinger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanFinger.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanGesture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanGesture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanGesture.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanGesture.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanSnapshot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanTouch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanTouch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanTouch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/Required/Scripts/LeanTouch.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/LeanTouch/package.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/LeanTouch/package.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/READ ME.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/READ ME.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/CW.Common.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/CW.Common.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/CW.Common.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/CW.Common.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.ttf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Fonts/VarelaRound-Regular.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDemoButtonBuilder.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDepthTextureMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDepthTextureMode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDepthTextureMode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwDepthTextureMode.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwFollow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwFollow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoDescription.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoDescription.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoDescription.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoDescription.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoLeft.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoLeft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoLeft.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoRight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoRight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Textures/DemoRight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwCommon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwCommon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwCommon.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwCommon.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwGuide.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwGuide.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwGuide.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwGuide.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwHelper.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwHelper.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/GUI/Examples/03 Radio.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/GUI/Examples/03 Radio.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Assemblies/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/AOTGenerationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/ImportSettingsConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Resources/Sirenix.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Entities.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Localization.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Sirenix.OdinInspector.CompatibilityLayer.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/Sirenix.OdinInspector.CompatibilityLayer.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sirenix/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/DisplayWordsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordButtonView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +268,38 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/AllFoldersView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/CW.Common.asmdef.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Lean/GUI/Examples/03 Radio.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,7 +317,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.build.unityPlugin&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -94,6 +366,9 @@
       <workItem from="1677649433551" duration="21528000" />
       <workItem from="1677733251012" duration="17421000" />
       <workItem from="1677828102096" duration="41861000" />
+      <workItem from="1678270186968" duration="1803000" />
+      <workItem from="1678272351920" duration="3614000" />
+      <workItem from="1678277215898" duration="2887000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -179,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678099973526</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="aded create word in create folder">
+      <created>1678199750316</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678199750316</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +493,30 @@
     <MESSAGE value="order by data" />
     <MESSAGE value="Add Word Creator + Refactoring" />
     <MESSAGE value="added dislayed words" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dislayed words" />
+    <MESSAGE value="aded create word in create folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="aded create word in create folder" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\SelectWordsView.cs" initialLine="48" containingFunctionPresentation="method 'SelectionFinished'">
+            <startOffsets>
+              <option value="1309" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1348" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

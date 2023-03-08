@@ -42,13 +42,13 @@ namespace Source
 
             addNewWordButton.OnClick.AddListener(() => OnClickToAddNewWord?.Invoke());
             addWordFromFolderButton.OnClick.AddListener(() => OnClickToSelectWordFromFolder?.Invoke());
-            
+
             createFolderButton.OnClick.AddListener(Create);
 
             displayWords.OnDeletedWord += RemoveWord;
         }
 
-        
+
 
         public void AddWord(Word word)
         {
@@ -56,6 +56,14 @@ namespace Source
             displayWords.AddWord(word, ButtonMode.Deliteble);
 
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
+        }
+
+        public void AddWords(List<Word> words)
+        {
+            foreach (var word in words)
+            {
+                AddWord(word);
+            }
         }
 
         private void Create()

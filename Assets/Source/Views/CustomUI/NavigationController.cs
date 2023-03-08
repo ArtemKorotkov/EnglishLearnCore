@@ -18,6 +18,8 @@ namespace Source
         [Dependency] private SelectFolderView SelectFolder { get; set; }
         [Dependency] private WordContentView WordContent { get; set; }
         [Dependency] private ScreenChangerService ScreenChanger { get; set; }
+        [Dependency] private SelectWordsView SelectWords { get; set; }
+        
 
 
         private Type _currentState;
@@ -42,7 +44,8 @@ namespace Source
                 [typeof(CreatorFolderView)] = CreatorFolder.window,
                 [typeof(CreatorWordView)] = CreatorWords.window,
                 [typeof(SelectFolderView)] = SelectFolder.window,
-                [typeof(WordContentView)] = WordContent.window
+                [typeof(WordContentView)] = WordContent.window,
+                [typeof(SelectWordsView)] = SelectWords.window
             };
 
             _mapPreviousStates = new Dictionary<Type, Type>();

@@ -1,5 +1,4 @@
-﻿using System;
-using Source.Serialization;
+﻿using Source.Serialization;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,12 +9,13 @@ namespace Source
         [SerializeField] private DisplayWordsView displayWords;
         private Folder _folder;
         public Window window;
-        public UnityEvent<Word,Folder> OnClickToWord;
+        public UnityEvent<Word, Folder> OnClickToWord;
 
         private void Start()
         {
             displayWords.OnClickToWord += ClickToWord;
         }
+
         public void DisplayWords(Folder folder)
         {
             displayWords.Display(folder);
@@ -25,7 +25,7 @@ namespace Source
 
         private void ClickToWord(Word word)
         {
-            OnClickToWord?.Invoke(word,_folder);
+            OnClickToWord?.Invoke(word, _folder);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Source
             MainMenu.dictFunctions.OnClickToAddNewWord += CreatorWordInit;
 
             SearchWord.OnClickToCreateWord += () => ScreenChanger.SetScreen(typeof(CreatorWordView));
-            
+
 
             SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
             
@@ -56,12 +56,11 @@ namespace Source
             SelectFolder.OnClickToFolder.AddListener((_) => ScreenChanger.SetPreviousScreen());
             
             CreatorWord.OnCreateWord.RemoveAllListeners();
+            CreatorWord.OnClickToSelectFolderButton.RemoveAllListeners();
             CreatorWord.OnCreateWord.AddListener( (_, _) => ScreenChanger.SetPreviousScreen());
             CreatorWord.OnCreateWord.AddListener(SaveWord);
             
             CreatorWord.OnClickToSelectFolderButton.AddListener(() => ScreenChanger.SetScreen(typeof(SelectFolderView)));
-            
-            
         }
 
         private void SaveWord(Word word, Folder folder)
