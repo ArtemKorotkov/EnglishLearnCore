@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="hh" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/response.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -16,31 +30,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/CW.Common.asmdef.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraLook.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraMove.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwCameraPivot.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwInputManager.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwLightIntensity.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Examples/Scripts/CwRotate.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwChild.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwRoot.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Scripts/CwSeedAttribute.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Shaders/CW_Fog.surfshader.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Extras/Shaders/CW_HDRP.surfshader.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/CW/Shared/Common/Required/Scripts/CwShaderBundle.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Lean/GUI/Examples/03 Radio.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/ProjectSettings/EditorSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,18 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "rider.run.widget.enabled.cache": "false",
-    "settings.editor.selected.configurable": "preferences.build.unityPlugin",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.3f1\Editor\Unity.exe" />
@@ -110,6 +101,12 @@
       <workItem from="1678270186968" duration="1803000" />
       <workItem from="1678272351920" duration="3614000" />
       <workItem from="1678277215898" duration="4785000" />
+      <workItem from="1678282356854" duration="88000" />
+      <workItem from="1678342495568" duration="4119000" />
+      <workItem from="1678467858523" duration="951000" />
+      <workItem from="1678469051902" duration="6648000" />
+      <workItem from="1678512873190" duration="3497000" />
+      <workItem from="1678615229189" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -244,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678282300608</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="g">
+      <created>1678282366278</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282366278</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +283,8 @@
     <MESSAGE value="aded create word in create folder" />
     <MESSAGE value="rafactoring" />
     <MESSAGE value="organaised code" />
-    <option name="LAST_COMMIT_MESSAGE" value="organaised code" />
+    <MESSAGE value="g" />
+    <option name="LAST_COMMIT_MESSAGE" value="g" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
