@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="order by data">
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateWordView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/CreateWordView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs.meta" afterDir="false" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SetWord.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SetWord.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreateFolderView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SetWordView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SetWordView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/response.json.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -44,8 +59,9 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -93,7 +109,21 @@
       <workItem from="1677584053742" duration="7179000" />
       <workItem from="1677649433551" duration="21528000" />
       <workItem from="1677733251012" duration="17421000" />
-      <workItem from="1677828102096" duration="5240000" />
+      <workItem from="1677828102096" duration="41861000" />
+      <workItem from="1678270186968" duration="1803000" />
+      <workItem from="1678272351920" duration="3614000" />
+      <workItem from="1678277215898" duration="4785000" />
+      <workItem from="1678282356854" duration="88000" />
+      <workItem from="1678342495568" duration="4119000" />
+      <workItem from="1678467858523" duration="951000" />
+      <workItem from="1678469051902" duration="6648000" />
+      <workItem from="1678512873190" duration="3497000" />
+      <workItem from="1678615229189" duration="20479000" />
+      <workItem from="1678960815055" duration="864000" />
+      <workItem from="1679314891973" duration="76000" />
+      <workItem from="1679468893435" duration="1812000" />
+      <workItem from="1687445194779" duration="2186000" />
+      <workItem from="1688629089951" duration="4444000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -165,7 +195,77 @@
       <option name="project" value="LOCAL" />
       <updated>1677738172352</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Word Creator + Refactoring">
+      <created>1677835685059</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677835685059</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added dislayed words">
+      <created>1678099973526</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678099973526</updated>
+    </task>
+    <task id="LOCAL-00013" summary="aded create word in create folder">
+      <created>1678199750316</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678199750316</updated>
+    </task>
+    <task id="LOCAL-00014" summary="rafactoring">
+      <created>1678280258169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678280258169</updated>
+    </task>
+    <task id="LOCAL-00015" summary="organaised code">
+      <created>1678282230364</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282230364</updated>
+    </task>
+    <task id="LOCAL-00016" summary="organaised code">
+      <created>1678282244452</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282244452</updated>
+    </task>
+    <task id="LOCAL-00017" summary="organaised code">
+      <created>1678282275245</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282275245</updated>
+    </task>
+    <task id="LOCAL-00018" summary="organaised code">
+      <created>1678282285565</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282285565</updated>
+    </task>
+    <task id="LOCAL-00019" summary="organaised code">
+      <created>1678282300608</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282300608</updated>
+    </task>
+    <task id="LOCAL-00020" summary="g">
+      <created>1678282366278</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1678282366278</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +279,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ShowWordContent" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -195,6 +307,35 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="order by data" />
-    <option name="LAST_COMMIT_MESSAGE" value="order by data" />
+    <MESSAGE value="Add Word Creator + Refactoring" />
+    <MESSAGE value="added dislayed words" />
+    <MESSAGE value="aded create word in create folder" />
+    <MESSAGE value="rafactoring" />
+    <MESSAGE value="organaised code" />
+    <MESSAGE value="g" />
+    <option name="LAST_COMMIT_MESSAGE" value="g" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs</url>
+          <line>48</line>
+          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\SelectWordsView.cs" initialLine="48" containingFunctionPresentation="method 'SelectionFinished'">
+            <startOffsets>
+              <option value="1309" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1348" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

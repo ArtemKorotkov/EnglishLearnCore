@@ -1,13 +1,10 @@
-﻿#region
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 
-#endregion
 
 namespace Source.Serialization
 {
@@ -17,6 +14,7 @@ namespace Source.Serialization
 
         private readonly string _directoryPath;
 
+        public event Action OnUpdate;
 
         public JsonStorage()
         {
@@ -33,6 +31,7 @@ namespace Source.Serialization
             var filePath = _directoryPath + "/" + folder.Name + ".Json";
             var jsonData = JsonConvert.SerializeObject(folder);
             File.WriteAllText(filePath, jsonData);
+            OnUpdate?.Invoke();
         }
 
         public void SaveFolders(List<Folder> folders)
@@ -58,8 +57,8 @@ namespace Source.Serialization
                     allFolders.Add(folder);
             }
 
-            
-            return allFolders;
+            // по умолчанию сортировать по дате создания папки
+            return allFolders.OrderByDescending(folder => folder.Date).ToList();
         }
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using Lean.Gui;
-using Sirenix.OdinInspector;
 using Source.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +11,7 @@ namespace Source
     {
         [SerializeField] private LeanButton button;
         [SerializeField] private LeanButton delete;
+        [SerializeField] private LeanToggle select;
         [SerializeField] private Text foreignValue;
         [SerializeField] private Text nativeValue;
         [SerializeField] private ProgressImage progressImage;
@@ -24,7 +23,9 @@ namespace Source
         private Word _displayedWord;
         public event Action<Word> Onclick;
         public event Action<Word> OnSelect;
+        public event Action<Word> OnDeSelect;
         public event Action<Word> OnDelete;
+
 
         public void SetMode(ButtonMode mode)
         {
@@ -33,11 +34,19 @@ namespace Source
                 case ButtonMode.Base:
                     delete.gameObject.SetActive(false);
                     progressImage.gameObject.SetActive(true);
+                    select.gameObject.SetActive(false);
                     break;
 
                 case ButtonMode.Deliteble:
                     delete.gameObject.SetActive(true);
                     progressImage.gameObject.SetActive(false);
+                    select.gameObject.SetActive(false);
+                    break;
+
+                case ButtonMode.Selecteble:
+                    delete.gameObject.SetActive(false);
+                    progressImage.gameObject.SetActive(false);
+                    select.gameObject.SetActive(true);
                     break;
             }
         }
@@ -68,14 +77,29 @@ namespace Source
         private void Click()
         {
             Onclick?.Invoke(_displayedWord);
+
+            select.Toggle();
+            if (select.On)
+            {
+                Select();
+            }
+            else
+            {
+                DeSelect();
+            }
         }
 
-        public void Select()
+        private void Select()
         {
             OnSelect?.Invoke(_displayedWord);
         }
 
-        public void Delete()
+        private void DeSelect()
+        {
+            OnDeSelect?.Invoke(_displayedWord);
+        }
+
+        private void Delete()
         {
             OnDelete?.Invoke(_displayedWord);
             Destroy(gameObject);

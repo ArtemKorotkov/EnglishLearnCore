@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
@@ -14,7 +13,6 @@ namespace Source
         public Window window;
         public event Action OnClickToCreateFolder;
         public event Action<Folder> OnClickToFolder;
-        
 
 
         private void Start()
@@ -25,8 +23,7 @@ namespace Source
 
         public void DisplayFolders(List<Folder> folders)
         {
-            // по умолчанию стоит сортировка по дате
-            displayFolders.Display(folders.OrderByDescending(folder => folder.Date).ToList());
+            displayFolders.Display(folders);
         }
 
         private void ClickToFolder(Folder folder)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Source.MainScen;
 using UnityEngine;
 using CryoDI;
+using Source.Services;
 
 namespace Source
 {
@@ -13,8 +14,12 @@ namespace Source
         [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private CreatorFolderView CreatorFolder { get; set; }
-        [Dependency] private CreateWordView CreatorWords { get; set; }
+        [Dependency] private CreatorWordView CreatorWords { get; set; }
         [Dependency] private SelectFolderView SelectFolder { get; set; }
+        [Dependency] private WordContentView WordContent { get; set; }
+        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
+        [Dependency] private SelectWordsView SelectWords { get; set; }
+        
 
 
         private Type _currentState;
@@ -37,8 +42,10 @@ namespace Source
                 [typeof(AllFoldersView)] = AllFolders.window,
                 [typeof(WordsFromFolderView)] = WordsFromFolder.window,
                 [typeof(CreatorFolderView)] = CreatorFolder.window,
-                [typeof(CreateWordView)] = CreatorWords.window,
-                [typeof(SelectFolderView)] = SelectFolder.window
+                [typeof(CreatorWordView)] = CreatorWords.window,
+                [typeof(SelectFolderView)] = SelectFolder.window,
+                [typeof(WordContentView)] = WordContent.window,
+                [typeof(SelectWordsView)] = SelectWords.window
             };
 
             _mapPreviousStates = new Dictionary<Type, Type>();
@@ -52,16 +59,8 @@ namespace Source
             SetState(_stateByDefault);
             SetDefaultPreviousState(_stateByDefault);
 
-            MainMenu.dictFunctions.OnClickToSearchWord += () => SetState(typeof(SearchWordView));
-            MainMenu.dictFunctions.OnClickToAllWords += () => SetState(typeof(AllFoldersView));
-            MainMenu.dictFunctions.OnClickToAddNewWord += () => SetState(typeof(CreateWordView));
-            SearchWord.OnClickToSetWord += () => SetState(typeof(CreateWordView));
-            AllFolders.OnClickToCreateFolder += () => SetState(typeof(CreatorFolderView));
-            AllFolders.OnClickToFolder += _ => SetState(typeof(WordsFromFolderView));
-            CreatorFolder.OnCreateFolder += _ => ChangeStateToPrevious();
-            CreatorWords.OnClickToSelectFolder += () => SetState(typeof(SelectFolderView));
-            CreatorWords.OnCreateWord += ChangeStateToPrevious;
-            SelectFolder.OnClickToFolder += _ => ChangeStateToPrevious();
+            ScreenChanger.OnSetState += SetState;
+            ScreenChanger.OnSetPreviousState += ChangeStateToPrevious;
         }
 
         private void SetState(Type state, bool setPreviousState = true)

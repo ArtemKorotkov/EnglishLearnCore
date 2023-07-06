@@ -13,6 +13,9 @@ namespace Source
         public event Action<Word> OnClickToWord;
         public event Action<Word> OnDeletedWord;
 
+        public event Action<Word> OnSelectWord;
+        public event Action<Word> OnDeSelectWord;
+
         public void Display(Folder folder, ButtonMode mode = ButtonMode.Base)
         {
             Clear();
@@ -22,6 +25,9 @@ namespace Source
                 wordButtonView.DisplayWord(word);
                 wordButtonView.SetMode(mode);
                 wordButtonView.Onclick += ClickToWord;
+                wordButtonView.OnDelete += DeleteWord;
+                wordButtonView.OnSelect += SelectWord;
+                wordButtonView.OnDeSelect += DeSelectWord;
             }
         }
 
@@ -32,6 +38,8 @@ namespace Source
             wordButtonView.SetMode(mode);
             wordButtonView.Onclick += ClickToWord;
             wordButtonView.OnDelete += DeleteWord;
+            wordButtonView.OnSelect += SelectWord;
+            wordButtonView.OnDeSelect += DeSelectWord;
             LayoutRebuilder.ForceRebuildLayoutImmediate(content);
         }
 
@@ -52,6 +60,14 @@ namespace Source
         private void DeleteWord(Word word)
         {
             OnDeletedWord?.Invoke(word);
+        }
+        private void SelectWord(Word word)
+        {
+            OnSelectWord?.Invoke(word);
+        }
+        private void DeSelectWord(Word word)
+        {
+            OnDeSelectWord?.Invoke(word);
         }
         
     }
