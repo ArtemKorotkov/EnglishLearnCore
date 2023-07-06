@@ -9,15 +9,14 @@ using UnityEngine.UI;
 namespace Source
 {
     public class CreatorWordView : CryoBehaviour
-
     {
-        [Dependency] private NotificationView Notification { get; set; }
-
         [SerializeField] private LeanButton createWordButton;
         [SerializeField] private LeanButton selectFolderButton;
         [SerializeField] private InputField nativeNameInput;
         [SerializeField] private InputField foreignNameInput;
         [SerializeField] private Text selectFolderText;
+        [SerializeField] private ImageSelector selectImage;
+        [Dependency] private NotificationView Notification { get; set; }
 
         public Window window;
         public UnityEvent<Word, Folder> OnCreateWord;
@@ -27,10 +26,24 @@ namespace Source
         private Word _currentWord;
         private Folder _selectedFolder;
 
+        private string[] testLinks = new[]
+        {
+            "https://i.ytimg.com/vi/gDlKZ7XJq40/default.jpg",
+            "https://i.ytimg.com/vi/gDlKZ7XJq40/default.jpg"
+        };
+
         private void Start()
         {
             createWordButton.OnClick.AddListener(CreateWord);
             selectFolderButton.OnClick.AddListener(ClickToSelectFolderButton);
+
+            DisplayImages(testLinks);
+        }
+
+
+        public void DisplayImages(string[] links)
+        {
+            selectImage.DisplayImagesFromLinks(links);
         }
 
 

@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/App.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/response.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/response.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/response.json.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +42,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -106,7 +118,12 @@
       <workItem from="1678467858523" duration="951000" />
       <workItem from="1678469051902" duration="6648000" />
       <workItem from="1678512873190" duration="3497000" />
-      <workItem from="1678615229189" duration="607000" />
+      <workItem from="1678615229189" duration="20479000" />
+      <workItem from="1678960815055" duration="864000" />
+      <workItem from="1679314891973" duration="76000" />
+      <workItem from="1679468893435" duration="1812000" />
+      <workItem from="1687445194779" duration="2186000" />
+      <workItem from="1688629089951" duration="4444000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -262,7 +279,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ShowWordContent" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
