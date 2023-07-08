@@ -19,33 +19,36 @@ namespace Source
         [Dependency] private WordContentView WordContent { get; set; }
         [Dependency] private ScreenChangerService ScreenChanger { get; set; }
         [Dependency] private SelectWordsView SelectWords { get; set; }
+        [Dependency("CreateFolder")] SelectFolderView SelectFolderForCreationFolder { get; set; }
+        [Dependency("CreateFolder")] CreatorWordView CreatorWordForCreateFolder { get; set; }
         
 
 
         private Type _currentState;
         private Type _stateByDefault;
 
-        private Dictionary<Type, IWindow> _mapAllStates;
+        private Dictionary<Type, IScreen> _mapAllStates;
         private Dictionary<Type, Type> _mapPreviousStates;
         private Type _previousStateByDefault;
 
 
         private Camera _camera;
 
-
         public void Init()
         {
-            _mapAllStates = new Dictionary<Type, IWindow>
+            _mapAllStates = new Dictionary<Type, IScreen>
             {
-                [typeof(MainMenuView)] = MainMenu.window,
-                [typeof(SearchWordView)] = SearchWord.window,
-                [typeof(AllFoldersView)] = AllFolders.window,
-                [typeof(WordsFromFolderView)] = WordsFromFolder.window,
-                [typeof(CreatorFolderView)] = CreatorFolder.window,
-                [typeof(CreatorWordView)] = CreatorWords.window,
-                [typeof(SelectFolderView)] = SelectFolder.window,
-                [typeof(WordContentView)] = WordContent.window,
-                [typeof(SelectWordsView)] = SelectWords.window
+                [typeof(MainMenuView)] = MainMenu.screen,
+                [typeof(SearchWordView)] = SearchWord.screen,
+                [typeof(AllFoldersView)] = AllFolders.screen,
+                [typeof(WordsFromFolderView)] = WordsFromFolder.screen,
+                [typeof(CreatorFolderView)] = CreatorFolder.screen,
+                [typeof(CreatorWordView)] = CreatorWords.screen,
+                [typeof(SelectFolderView)] = SelectFolder.screen,
+                [typeof(WordContentView)] = WordContent.screen,
+                [typeof(SelectWordsView)] = SelectWords.screen,
+                [typeof(CreatorWordForCreationFolderView)] = CreatorWordForCreateFolder.screen,
+                [typeof(SelectFolderForCreationFolderView)] = SelectFolderForCreationFolder.screen
             };
 
             _mapPreviousStates = new Dictionary<Type, Type>();
