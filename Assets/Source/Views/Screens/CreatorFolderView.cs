@@ -25,7 +25,7 @@ namespace Source
         private Folder _createdFolder;
         private List<String> _foldersName;
 
-        public Window window;
+        public Screen screen;
         public event Action<Folder> OnCreateFolder;
         public event Action OnClickToSelectWordFromFolder;
         public event Action OnClickToAddNewWord;

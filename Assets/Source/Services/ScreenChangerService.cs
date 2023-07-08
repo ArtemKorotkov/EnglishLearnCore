@@ -4,12 +4,12 @@ namespace Source.Services
 {
     public class ScreenChangerService
     {
-        public event Action<Type,bool> OnSetState;
+        public event Action<Screens,bool> OnSetState;
         public event Action OnSetPreviousState;
         
-        public void SetScreen(Type t, bool setPrevious = true)
+        public void SetScreen(Screens screen, bool setPrevious = true)
         {
-            OnSetState?.Invoke(t, setPrevious);  
+            OnSetState?.Invoke(screen, setPrevious);  
         }
         public void SetPreviousScreen()
         {

@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Services/GoogleApi.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/ImageSelector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectImageButton.cs.meta" afterDir="false" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Add new States">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/Screens.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/Screens.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/Window.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Home.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Home.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Setting.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Setting.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SearchWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SearchWord.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWordFromFolder.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWordFromFolder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordContent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordContent.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/LocalizationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/LocalizationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/MainMenuController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/BinaryStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/BinaryStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/BinaryStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/BinaryStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/IStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/IStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/IStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/IStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/ScreenChangerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/ScreenChangerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/TestData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/TestData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TestData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/response.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/FolderButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/FolderButtonView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/IWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/IScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/IWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/IScreen.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/HomeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/HomeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/SettingsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/SettingsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SearchWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SearchWordView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Window.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screen.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordContentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordContentView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +82,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ShowWordContent" />
       </map>
     </option>
   </component>
@@ -43,12 +90,77 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateWord.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu/Home.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SearchWord.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SelectFolder.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SelectWords.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/WordContent.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/WordsFromFolder.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppContextes/MainContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppContextes/MainContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppStates/MainState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppStates/MainState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/LocalizationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/AllFoldersView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/AllFoldersView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordContentView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordContentView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordsFromFolderView.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MBan9jmEQi8QGkdwBbNfe7F004" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -84,10 +196,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="45988">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="45988" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -123,7 +235,8 @@
       <workItem from="1679314891973" duration="76000" />
       <workItem from="1679468893435" duration="1812000" />
       <workItem from="1687445194779" duration="2186000" />
-      <workItem from="1688629089951" duration="4444000" />
+      <workItem from="1688629089951" duration="10377000" />
+      <workItem from="1688715656950" duration="32210000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -265,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678282366278</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added ShoImages">
+      <created>1688635862523</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1688635862523</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add new States">
+      <created>1688816882397</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688816882397</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,23 +440,25 @@
     <MESSAGE value="rafactoring" />
     <MESSAGE value="organaised code" />
     <MESSAGE value="g" />
-    <option name="LAST_COMMIT_MESSAGE" value="g" />
+    <MESSAGE value="Added ShoImages" />
+    <MESSAGE value="Add new States" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new States" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs</url>
-          <line>48</line>
-          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\SelectWordsView.cs" initialLine="48" containingFunctionPresentation="method 'SelectionFinished'">
+          <url>file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs</url>
+          <line>92</line>
+          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\CustomUI\NavigationController.cs" initialLine="96" containingFunctionPresentation="method 'SubscribeAllStateToClickToBack'">
             <startOffsets>
-              <option value="1309" />
+              <option value="3416" />
             </startOffsets>
             <endOffsets>
-              <option value="1348" />
+              <option value="3417" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

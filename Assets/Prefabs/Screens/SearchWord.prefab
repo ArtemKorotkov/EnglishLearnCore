@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setWord: {fileID: 2290584273227713608}
-  window: {fileID: 3029801086939198667}
+  screen: {fileID: 3029801086939198667}
 --- !u!224 &3694028282437735229 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2324295731739823074, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}

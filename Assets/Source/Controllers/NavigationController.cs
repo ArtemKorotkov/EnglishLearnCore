@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Source.MainScen;
 using UnityEngine;
 using CryoDI;
@@ -14,50 +13,49 @@ namespace Source
         [Dependency] private AllFoldersView AllFolders { get; set; }
         [Dependency] private WordsFromFolderView WordsFromFolder { get; set; }
         [Dependency] private CreatorFolderView CreatorFolder { get; set; }
-        [Dependency] private CreatorWordView CreatorWords { get; set; }
         [Dependency] private SelectFolderView SelectFolder { get; set; }
+        [Dependency] private CreatorWordView CreatorWords { get; set; }
         [Dependency] private WordContentView WordContent { get; set; }
-        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
         [Dependency] private SelectWordsView SelectWords { get; set; }
-        [Dependency("CreateFolder")] SelectFolderView SelectFolderForCreationFolder { get; set; }
-        [Dependency("CreateFolder")] CreatorWordView CreatorWordForCreateFolder { get; set; }
-        
+        [Dependency("CreateFolder")] private SelectFolderView SelectFolderForCreationFolder { get; set; }
+        [Dependency("CreateFolder")] private CreatorWordView CreatorWordForCreateFolder { get; set; }
+        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
 
 
-        private Type _currentState;
-        private Type _stateByDefault;
+        private Screens _currentState;
+        private Screens _stateByDefault;
 
-        private Dictionary<Type, IScreen> _mapAllStates;
-        private Dictionary<Type, Type> _mapPreviousStates;
-        private Type _previousStateByDefault;
+        private Dictionary<Screens, IScreen> _mapAllStates;
+        private Dictionary<Screens, Screens> _mapPreviousStates;
+        private Screens _previousStateByDefault;
 
 
         private Camera _camera;
 
         public void Init()
         {
-            _mapAllStates = new Dictionary<Type, IScreen>
+            _mapAllStates = new Dictionary<Screens, IScreen>
             {
-                [typeof(MainMenuView)] = MainMenu.screen,
-                [typeof(SearchWordView)] = SearchWord.screen,
-                [typeof(AllFoldersView)] = AllFolders.screen,
-                [typeof(WordsFromFolderView)] = WordsFromFolder.screen,
-                [typeof(CreatorFolderView)] = CreatorFolder.screen,
-                [typeof(CreatorWordView)] = CreatorWords.screen,
-                [typeof(SelectFolderView)] = SelectFolder.screen,
-                [typeof(WordContentView)] = WordContent.screen,
-                [typeof(SelectWordsView)] = SelectWords.screen,
-                [typeof(CreatorWordForCreationFolderView)] = CreatorWordForCreateFolder.screen,
-                [typeof(SelectFolderForCreationFolderView)] = SelectFolderForCreationFolder.screen
+                [Screens.MainMenu] = MainMenu.screen,
+                [Screens.SearchWord] = SearchWord.screen,
+                [Screens.AllFolders] = AllFolders.screen,
+                [Screens.WordsFromFolder] = WordsFromFolder.screen,
+                [Screens.CreatorFolder] = CreatorFolder.screen,
+                [Screens.CreatorWords] = CreatorWords.screen,
+                [Screens.SelectFolder] = SelectFolder.screen,
+                [Screens.WordContent] = WordContent.screen,
+                [Screens.SelectWords] = SelectWords.screen,
+                [Screens.SelectFolderForCreationFolder] = SelectFolderForCreationFolder.screen,
+                [Screens.CreatorWordForCreateFolder] = CreatorWordForCreateFolder.screen
             };
 
-            _mapPreviousStates = new Dictionary<Type, Type>();
+            _mapPreviousStates = new Dictionary<Screens, Screens>();
 
             SubscribeAllStateToClickToBack();
             ActivateAllStates();
             HideAllStates();
 
-            _stateByDefault = typeof(MainMenuView);
+            _stateByDefault = Screens.MainMenu;
             _currentState = _stateByDefault;
             SetState(_stateByDefault);
             SetDefaultPreviousState(_stateByDefault);
@@ -66,7 +64,7 @@ namespace Source
             ScreenChanger.OnSetPreviousState += ChangeStateToPrevious;
         }
 
-        private void SetState(Type state, bool setPreviousState = true)
+        private void SetState(Screens state, bool setPreviousState = true)
         {
             if (setPreviousState)
             {
@@ -110,7 +108,7 @@ namespace Source
             }
         }
 
-        private void SetDefaultPreviousState(Type defaultValue)
+        private void SetDefaultPreviousState(Screens defaultValue)
         {
             foreach (var state in _mapAllStates)
                 _mapPreviousStates[state.Key] = defaultValue;

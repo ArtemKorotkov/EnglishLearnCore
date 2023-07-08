@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayFolders: {fileID: 179426607042196254}
-  window: {fileID: 6233206438756897414}
+  screen: {fileID: 6233206438756897414}
   OnClickToFolder:
     m_PersistentCalls:
       m_Calls: []

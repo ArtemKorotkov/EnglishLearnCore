@@ -9,7 +9,7 @@ namespace Source
     {
         [SerializeField] private LeanButton setWord;
 
-        public Window window;
+        public Screen screen;
 
         private void Start()
         {

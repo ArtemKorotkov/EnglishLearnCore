@@ -5,7 +5,7 @@ namespace Source.MainScen
 {
     public class SettingsView : MonoBehaviour
     {
-        public Window window;
+        public Screen screen;
        
     }
 }

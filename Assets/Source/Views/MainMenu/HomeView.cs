@@ -4,7 +4,6 @@ namespace Source.MainScen
 {
     public class HomeView : MonoBehaviour
     {
-        public Window window;
-        
+        public Screen screen;
     }
 }

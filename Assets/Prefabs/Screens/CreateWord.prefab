@@ -1024,7 +1024,7 @@ MonoBehaviour:
   foreignNameInput: {fileID: 4266143430814289620}
   selectFolderText: {fileID: 3414109308709563773}
   selectImage: {fileID: 6335248348151404726}
-  window: {fileID: 4851845781956587458}
+  screen: {fileID: 4851845781956587458}
   OnCreateWord:
     m_PersistentCalls:
       m_Calls: []

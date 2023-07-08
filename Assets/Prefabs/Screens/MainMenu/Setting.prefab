@@ -166,7 +166,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1044764724096175331, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2324295731739823074, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}
       propertyPath: m_Pivot.x
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e61aa1a39e7b47eaac206067e70ce890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 5734743348750145066}
+  screen: {fileID: 5734743348750145066}
 --- !u!224 &6258369189269058012 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2324295731739823074, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}

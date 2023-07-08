@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Source
 {
-    public class Window : MonoBehaviour, IWindow
+    public class Screen : MonoBehaviour, IScreen
 
     {
         private float _targetAlpha;

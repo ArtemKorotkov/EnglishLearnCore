@@ -8,7 +8,7 @@ namespace Source.MainScen
     public class MainMenuView : MonoBehaviour
 
     {
-        public Window window;
+        public Screen screen;
         
         public DictFunctionsView dictFunctions;
         public ToolBarView toolBarView;

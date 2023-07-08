@@ -1,14 +1,13 @@
 ﻿using System;
 using Lean.Gui;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Source
 {
     public class DictFunctionsView: MonoBehaviour
 
     {
-        public Window window;
+        public Screen screen;
         
         [SerializeField] private LeanButton searchWord;
         [SerializeField] private LeanButton addNewWord;

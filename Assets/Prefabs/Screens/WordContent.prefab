@@ -158,7 +158,7 @@ MonoBehaviour:
   editButton: {fileID: 3944114312316349070}
   nextWordButton: {fileID: 942806433330803274}
   previousWordButton: {fileID: 1536257512715194461}
-  window: {fileID: 3803603791241149703}
+  screen: {fileID: 3803603791241149703}
 --- !u!114 &3803603791241149703 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4111321954121149460, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}

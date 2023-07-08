@@ -14,7 +14,7 @@ namespace Source
         [SerializeField] private Text buttonText;
         private List<Word> _selectedWords;
 
-        public Window window;
+        public Screen screen;
 
         public UnityEvent<List<Word>> onSelectedWords;
 

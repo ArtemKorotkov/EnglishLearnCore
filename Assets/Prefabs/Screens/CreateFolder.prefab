@@ -688,7 +688,7 @@ MonoBehaviour:
   addWordFromFolderButton: {fileID: 7758790081180267354}
   displayWords: {fileID: 129312978568529434}
   content: {fileID: 6178534039908482868}
-  window: {fileID: 6918249781301377514}
+  screen: {fileID: 6918249781301377514}
 --- !u!224 &8740739939266502172 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2324295731739823074, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}
@@ -1141,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4625873510249458285, guid: 2e12ca8d6eaca3b4e8397bd15efe1141, type: 3}
       propertyPath: m_Name
-      value: CreateFolder
+      value: CreateFolderButton
       objectReference: {fileID: 0}
     - target: {fileID: 8697638265298407931, guid: 2e12ca8d6eaca3b4e8397bd15efe1141, type: 3}
       propertyPath: m_AnchorMax.y

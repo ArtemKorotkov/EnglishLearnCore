@@ -17,7 +17,7 @@ namespace Source
         [SerializeField] private LeanButton nextWordButton;
         [SerializeField] private LeanButton previousWordButton;
 
-        public Window window;
+        public Screen screen;
 
         public event Action OnClickToNextWord;
         public event Action OnClickToPreviousWord;

@@ -8,7 +8,7 @@ namespace Source
     {
         [SerializeField] private DisplayWordsView displayWords;
         private Folder _folder;
-        public Window window;
+        public Screen screen;
         public UnityEvent<Word, Folder> OnClickToWord;
 
         private void Start()

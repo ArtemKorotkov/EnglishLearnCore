@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using Lean.Gui;
+using CryoDI;
 using Source.Serialization;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Source
 {
-    public class AllFoldersView : MonoBehaviour
-    {
-        [SerializeField] private LeanButton createFolder;
-        [SerializeField] private DisplayFoldersView displayFolders;
-        public Window window;
-        public event Action OnClickToCreateFolder;
-        public event Action<Folder> OnClickToFolder;
+    public class SelectFolderView : CryoBehaviour
 
+    {
+        [SerializeField] private DisplayFoldersView displayFolders;
+        public Screen screen;
+
+        public UnityEvent<Folder> OnClickToFolder;
 
         private void Start()
         {
-            createFolder.OnClick.AddListener(ClickToCreate);
             displayFolders.OnClickToFolder += ClickToFolder;
         }
 
@@ -29,11 +28,6 @@ namespace Source
         private void ClickToFolder(Folder folder)
         {
             OnClickToFolder?.Invoke(folder);
-        }
-
-        private void ClickToCreate()
-        {
-            OnClickToCreateFolder?.Invoke();
         }
     }
 }

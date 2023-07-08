@@ -444,7 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   createFolder: {fileID: 5415951000999353898}
   displayFolders: {fileID: 5280132123408567605}
-  window: {fileID: 2142433074073119917}
+  screen: {fileID: 2142433074073119917}
 --- !u!224 &357091312010644315 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2324295731739823074, guid: 8fb1da0c2afaca74eb91f846895a9fea, type: 3}

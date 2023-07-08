@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346b2a2d710a4ab886375d09a79b2366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 8343116971025305922}
+  screen: {fileID: 8343116971025305922}
   searchWord: {fileID: 4674949660459926537}
   addNewWord: {fileID: 3153875254148740419}
   allWords: {fileID: 1238935116143087778}

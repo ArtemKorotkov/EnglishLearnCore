@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayWords: {fileID: 3352555496415229539}
-  window: {fileID: 1713112268695420676}
+  screen: {fileID: 1713112268695420676}
   OnClickToWord:
     m_PersistentCalls:
       m_Calls: []

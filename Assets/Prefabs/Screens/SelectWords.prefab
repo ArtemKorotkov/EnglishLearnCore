@@ -149,7 +149,7 @@ MonoBehaviour:
   displayWords: {fileID: 3311377270736120142}
   finishSelectButton: {fileID: 2869117924195383665}
   buttonText: {fileID: 4632805624934740350}
-  window: {fileID: 1492092165989310505}
+  screen: {fileID: 1492092165989310505}
   onSelectedWords:
     m_PersistentCalls:
       m_Calls: []

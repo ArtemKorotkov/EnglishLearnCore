@@ -22,11 +22,12 @@ namespace Source
 
             _controllers = new List<IController>
             {
-                viewContainer.BuildUp(new FolderController()),
+                viewContainer.BuildUp(new ShowAllFolderController()),
                 viewContainer.BuildUp(new NavigationController()),
                 viewContainer.BuildUp(new MainMenuController()),
                 viewContainer.BuildUp(new LocalizationController()),
-                viewContainer.BuildUp(new WordController())
+                viewContainer.BuildUp(new WordController()),
+                viewContainer.BuildUp(new CreatorFolderController())
             };
 
             foreach (IController controller in _controllers)

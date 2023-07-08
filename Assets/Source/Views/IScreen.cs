@@ -2,7 +2,7 @@
 
 namespace Source
 {
-    public interface IWindow
+    public interface IScreen
     {
         public event Action OnClickToBack;
         public bool IsShown { get; }
