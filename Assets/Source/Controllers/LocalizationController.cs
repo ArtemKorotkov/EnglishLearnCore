@@ -3,10 +3,9 @@
 
 namespace Source
 {
-    public class LocalizationController: IController
+    public class LocalizationController : IController
 
     {
-        
         private EnglishLanguage English = new EnglishLanguage();
         private RussianLanguage Russian = new RussianLanguage();
 
@@ -14,19 +13,17 @@ namespace Source
 
 
         public void Init()
-        { 
+        {
             Language = Russian;
         }
 
         public void Run()
         {
-            
         }
 
         public static String Translate(string Phrase)
         {
             return Language.GetPhrase(Phrase);
         }
-
     }
 }

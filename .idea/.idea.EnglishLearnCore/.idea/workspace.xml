@@ -1,71 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Add new States">
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/Screens.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Enums/Screens.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens.meta" afterDir="false" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/AllFolders.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateFolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/CreateWord.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Home.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Home.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Setting.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/MainMenu/Setting.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SearchWord.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SearchWord.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectFolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWordFromFolder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWordFromFolder.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordContent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordContent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/WordsFromFolder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppContextes/MainContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Application/AppStates/MainState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/FolderController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/LocalizationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/LocalizationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/MainMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/WordController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/BinaryStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/BinaryStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/BinaryStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/BinaryStorage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Folder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/IStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/IStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/IStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/IStorage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/JsonStorage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Serialization/Word.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/ScreenChangerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/ScreenChangerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/TestData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/TestData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/AllFoldersView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CreatorWordView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/FolderButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/FolderButtonView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/IWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/IScreen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/IWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/IScreen.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/DictFunctionsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/HomeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/HomeView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/SettingsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/SettingsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SearchWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SearchWordView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/SelectWordsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Window.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Window.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screen.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordContentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordContentView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/WordsFromFolderView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +173,7 @@
       <workItem from="1679468893435" duration="1812000" />
       <workItem from="1687445194779" duration="2186000" />
       <workItem from="1688629089951" duration="10377000" />
-      <workItem from="1688715656950" duration="32210000" />
+      <workItem from="1688715656950" duration="34176000" />
     </task>
     <task id="LOCAL-00001" summary="refactorinf">
       <created>1677243621779</created>
@@ -392,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688816882397</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Refactoring">
+      <created>1688829997729</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688829997729</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +376,6 @@
     <MESSAGE value="Added create folder" />
     <MESSAGE value="resolved bugs" />
     <MESSAGE value="refactoring" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="order by data" />
     <MESSAGE value="Add Word Creator + Refactoring" />
     <MESSAGE value="added dislayed words" />
@@ -442,26 +385,8 @@
     <MESSAGE value="g" />
     <MESSAGE value="Added ShoImages" />
     <MESSAGE value="Add new States" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new States" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Source/Views/CustomUI/NavigationController.cs</url>
-          <line>92</line>
-          <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\CustomUI\NavigationController.cs" initialLine="96" containingFunctionPresentation="method 'SubscribeAllStateToClickToBack'">
-            <startOffsets>
-              <option value="3416" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3417" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

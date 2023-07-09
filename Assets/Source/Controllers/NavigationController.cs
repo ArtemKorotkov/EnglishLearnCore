@@ -57,14 +57,31 @@ namespace Source
 
             _stateByDefault = Screens.MainMenu;
             _currentState = _stateByDefault;
-            SetState(_stateByDefault);
+            SetScreen(_stateByDefault);
             SetDefaultPreviousState(_stateByDefault);
 
-            ScreenChanger.OnSetState += SetState;
-            ScreenChanger.OnSetPreviousState += ChangeStateToPrevious;
+            ScreenChanger.OnSetState += SetScreen;
+            ScreenChanger.OnSetPreviousState += SetPreviousScreen;
+
+            AllFolders.OnClickToCreateFolder += () => SetScreen(Screens.CreatorFolder);
+            AllFolders.OnClickToFolder += _ => SetScreen(Screens.WordsFromFolder);
+
+            CreatorWords.OnCreateWord.AddListener((_, _) => SetPreviousScreen());
+            CreatorWords.OnClickToSelectFolderButton.AddListener(() => SetScreen(Screens.SelectFolder));
+
+            CreatorFolder.OnCreateFolder += _ => SetScreen(Screens.AllFolders, false);
+            CreatorFolder.OnClickToAddNewWord += () => SetScreen(Screens.CreatorWordForCreateFolder);
+            CreatorFolder.OnClickToSelectWordFromFolder += () => SetScreen(Screens.SelectFolderForCreationFolder);
+            SelectFolderForCreationFolder.OnClickToFolder.AddListener((_) => SetScreen(Screens.SelectWords));
+            SelectWords.onSelectedWords.AddListener((_) => SetScreen(Screens.CreatorFolder, false));
+            CreatorWordForCreateFolder.OnCreateWord.AddListener((_, _) => SetPreviousScreen());
+
+            MainMenu.dictFunctions.OnClickToAllFolders += () => ScreenChanger.SetScreen(Screens.AllFolders);
+            MainMenu.dictFunctions.OnClickToSearchWord += () => ScreenChanger.SetScreen(Screens.SearchWord);
+            MainMenu.dictFunctions.OnClickToAddNewWord += () => ScreenChanger.SetScreen(Screens.CreatorWords);
         }
 
-        private void SetState(Screens state, bool setPreviousState = true)
+        private void SetScreen(Screens state, bool setPreviousState = true)
         {
             if (setPreviousState)
             {
@@ -80,16 +97,16 @@ namespace Source
         {
         }
 
-        private void ChangeStateToPrevious()
+        private void SetPreviousScreen()
         {
             var prevState = _mapPreviousStates[_currentState];
-            SetState(prevState, false);
+            SetScreen(prevState, false);
         }
 
         private void SubscribeAllStateToClickToBack()
         {
             foreach (var state in _mapAllStates)
-                _mapAllStates[state.Key].OnClickToBack += ChangeStateToPrevious;
+                _mapAllStates[state.Key].OnClickToBack += SetPreviousScreen;
         }
 
         private void ActivateAllStates()

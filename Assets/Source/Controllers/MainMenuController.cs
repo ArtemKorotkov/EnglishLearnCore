@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using CryoDI;
 using Source.MainScen;
-using Source.Services;
 using UnityEngine;
 
 namespace Source
@@ -11,7 +10,6 @@ namespace Source
     public class MainMenuController : IController
     {
         [Dependency] private MainMenuView _mainMenu { get; set; }
-        [Dependency] private ScreenChangerService ScreenChanger { get; set; }
 
         private DictFunctionsView _dictFunctions;
         private HomeView _home;
@@ -28,13 +26,8 @@ namespace Source
 
 
         public void Init()
-        { 
-            
+        {
             _dictFunctions = _mainMenu.dictFunctions;
-            _dictFunctions.OnClickToAllFolders += () => ScreenChanger.SetScreen(Screens.AllFolders);
-            _dictFunctions.OnClickToSearchWord += () => ScreenChanger.SetScreen(Screens.SearchWord);
-            _dictFunctions.OnClickToAddNewWord += () => ScreenChanger.SetScreen(Screens.CreatorWords);
-
             _settings = _mainMenu.settings;
             _home = _mainMenu.home;
 
