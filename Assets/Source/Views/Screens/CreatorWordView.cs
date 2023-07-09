@@ -17,6 +17,8 @@ namespace Source
         [SerializeField] private Text selectFolderText;
         [SerializeField] private ImageSelector selectImage;
         [Dependency] private NotificationView Notification { get; set; }
+        
+        
 
         public Screen screen;
         public UnityEvent<Word, Folder> OnCreateWord;

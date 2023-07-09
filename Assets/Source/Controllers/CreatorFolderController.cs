@@ -19,6 +19,7 @@ namespace Source
             SelectFolder.screen.OnShow += ShowAllFolders;
 
             SetFoldersName();
+            SetEmptyFolderByDefault();
 
             SelectWords.onSelectedWords.AddListener(CreatorFolder.AddWords);
             SelectFolder.OnClickToFolder.AddListener(SelectWords.DisplayWords);
@@ -39,6 +40,12 @@ namespace Source
         {
             var foldersName = Storage.AllFolders.Select(folder => folder.Name).ToList();
             CreatorFolder.SetFoldersName(foldersName);
+        }
+        private void SetEmptyFolderByDefault()
+        {
+            var emptyFolderByDefault = new Folder();
+            emptyFolderByDefault.Name = "-------";
+            CreatorWord.SelectFolder(emptyFolderByDefault);
         }
 
         public void Run()
