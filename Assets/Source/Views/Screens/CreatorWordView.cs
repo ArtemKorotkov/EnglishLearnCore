@@ -3,7 +3,6 @@ using CryoDI;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Source
@@ -17,12 +16,11 @@ namespace Source
         [SerializeField] private Text selectFolderText;
         [SerializeField] private ImageSelector selectImage;
         [Dependency] private NotificationView Notification { get; set; }
-        
-        
+
 
         public Screen screen;
-        public UnityEvent<Word, Folder> OnCreateWord;
-        public UnityEvent OnClickToSelectFolderButton;
+        public event Action<Word, Folder> OnCreateWord;
+        public event Action OnClickToSelectFolderButton;
 
 
         private Word _currentWord;

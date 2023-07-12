@@ -21,9 +21,9 @@ namespace Source
             SetFoldersName();
             SetEmptyFolderByDefault();
 
-            SelectWords.onSelectedWords.AddListener(CreatorFolder.AddWords);
-            SelectFolder.OnClickToFolder.AddListener(SelectWords.DisplayWords);
-            CreatorWord.OnCreateWord.AddListener((word, _) => CreatorFolder.AddWord(word));
+            SelectWords.onSelectedWords += CreatorFolder.AddWords;
+            SelectFolder.OnClickToFolder += SelectWords.DisplayWords;
+            CreatorWord.OnCreateWord += (word, _) => CreatorFolder.AddWord(word);
         }
 
         private void ShowAllFolders()

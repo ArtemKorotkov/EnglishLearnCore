@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Source.MainScen
 {
@@ -9,7 +8,7 @@ namespace Source.MainScen
 
     {
         public Screen screen;
-        
+
         public DictFunctionsView dictFunctions;
         public ToolBarView toolBarView;
         public SettingsView settings;

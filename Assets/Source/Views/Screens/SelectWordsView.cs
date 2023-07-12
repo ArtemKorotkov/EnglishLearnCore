@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Lean.Gui;
 using Source.Serialization;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Source
@@ -16,7 +16,7 @@ namespace Source
 
         public Screen screen;
 
-        public UnityEvent<List<Word>> onSelectedWords;
+        public event Action<List<Word>> onSelectedWords;
 
         private void Start()
         {

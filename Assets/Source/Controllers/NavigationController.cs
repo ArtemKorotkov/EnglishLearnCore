@@ -65,20 +65,23 @@ namespace Source
 
             AllFolders.OnClickToCreateFolder += () => SetScreen(Screens.CreatorFolder);
             AllFolders.OnClickToFolder += _ => SetScreen(Screens.WordsFromFolder);
+            WordsFromFolder.OnClickToWord += (_, _) => SetScreen(Screens.WordContent);
 
-            CreatorWords.OnCreateWord.AddListener((_, _) => SetPreviousScreen());
-            CreatorWords.OnClickToSelectFolderButton.AddListener(() => SetScreen(Screens.SelectFolder));
+            CreatorWords.OnCreateWord += (_, _) => SetPreviousScreen();
+            CreatorWords.OnClickToSelectFolderButton += () => SetScreen(Screens.SelectFolder);
 
             CreatorFolder.OnCreateFolder += _ => SetScreen(Screens.AllFolders, false);
             CreatorFolder.OnClickToAddNewWord += () => SetScreen(Screens.CreatorWordForCreateFolder);
             CreatorFolder.OnClickToSelectWordFromFolder += () => SetScreen(Screens.SelectFolderForCreationFolder);
-            SelectFolderForCreationFolder.OnClickToFolder.AddListener((_) => SetScreen(Screens.SelectWords));
-            SelectWords.onSelectedWords.AddListener((_) => SetScreen(Screens.CreatorFolder, false));
-            CreatorWordForCreateFolder.OnCreateWord.AddListener((_, _) => SetPreviousScreen());
+            SelectFolderForCreationFolder.OnClickToFolder += (_) => SetScreen(Screens.SelectWords);
+            SelectWords.onSelectedWords += _ => SetScreen(Screens.CreatorFolder, false);
+            CreatorWordForCreateFolder.OnCreateWord += (_, _) => SetPreviousScreen();
 
-            MainMenu.dictFunctions.OnClickToAllFolders += () => ScreenChanger.SetScreen(Screens.AllFolders);
-            MainMenu.dictFunctions.OnClickToSearchWord += () => ScreenChanger.SetScreen(Screens.SearchWord);
-            MainMenu.dictFunctions.OnClickToAddNewWord += () => ScreenChanger.SetScreen(Screens.CreatorWords);
+            MainMenu.dictFunctions.OnClickToAllFolders += () => SetScreen(Screens.AllFolders);
+            MainMenu.dictFunctions.OnClickToSearchWord += () => SetScreen(Screens.SearchWord);
+            MainMenu.dictFunctions.OnClickToAddNewWord += () => SetScreen(Screens.CreatorWords);
+            
+            SelectFolder.OnClickToFolder += _ => SetScreen(Screens.CreatorWords, false);
         }
 
         private void SetScreen(Screens state, bool setPreviousState = true)

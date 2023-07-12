@@ -20,12 +20,12 @@ namespace Source
             Storage.OnUpdate += () => SetFolderByDefault(Storage.AllFolders.FirstOrDefault());
 
 
-            SelectFolder.OnClickToFolder.AddListener(CreatorWord.SelectFolder);
-            SelectFolder.OnClickToFolder.AddListener(SetFolderByDefault);
+            SelectFolder.OnClickToFolder += CreatorWord.SelectFolder;
+            SelectFolder.OnClickToFolder += SetFolderByDefault;
             SelectFolder.screen.OnShow += DisplayAllFolders;
 
             CreatorWord.screen.OnShow += () => CreatorWord.SelectFolder(_folderByDefault);
-            CreatorWord.OnCreateWord.AddListener(SaveWord);
+            CreatorWord.OnCreateWord += SaveWord;
         }
 
         private void SetFolderByDefault(Folder folder)

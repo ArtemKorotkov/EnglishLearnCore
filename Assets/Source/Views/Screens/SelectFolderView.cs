@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using CryoDI;
 using Source.Serialization;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Source
 {
@@ -13,7 +12,7 @@ namespace Source
         [SerializeField] private DisplayFoldersView displayFolders;
         public Screen screen;
 
-        public UnityEvent<Folder> OnClickToFolder;
+        public event Action<Folder> OnClickToFolder;
 
         private void Start()
         {
