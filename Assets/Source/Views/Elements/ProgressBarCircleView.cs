@@ -8,7 +8,7 @@ namespace Source
 
         [SerializeField] private Image barCircle;
 
-        private Text txtTitle;
+        [SerializeField] private Text txtTitle;
         private float barValue;
 
         public float BarValue

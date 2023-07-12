@@ -4,6 +4,7 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using UnityEngine;
 
 
 namespace Source.Serialization
@@ -29,6 +30,7 @@ namespace Source.Serialization
         public void SaveFolder(Folder folder)
         {
             var filePath = _directoryPath + "/" + folder.Name + ".Json";
+
             var jsonData = JsonConvert.SerializeObject(folder);
             File.WriteAllText(filePath, jsonData);
             OnUpdate?.Invoke();

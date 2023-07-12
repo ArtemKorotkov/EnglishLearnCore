@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Refactoring">
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs.meta" afterDir="false" />
+    <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Added circle progress bar for Words and folders">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/FolderButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/FolderButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressImage.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressImage.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Enums/Progress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Enums/ProgressType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Enums/Progress.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Enums/ProgressType.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressDisplayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressImage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressDisplayer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/WordButtonView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/CreatorWordView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordContentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordContentView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressBarCircle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressBarCircle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/JsonStorage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +30,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Elements/ProgressBarCircle.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/CreatorFolderController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Enums/Progress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Enums/Progress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Folder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Folder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/JsonStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/JsonStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/JsonStorage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Word.cs" root0="SKIP_HIGHLIGHTING" />
@@ -317,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688899149637</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added circle progress bar for Words and folders">
+      <created>1689161245038</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689161245038</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +364,8 @@
     <MESSAGE value="Added ShoImages" />
     <MESSAGE value="Add new States" />
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Added circle progress bar for Words and folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added circle progress bar for Words and folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
