@@ -36,19 +36,19 @@ namespace Source
             foreignValue.text = $"Значение на Английском: {word.ForeignValue}";
             folderName.text = $"Название Папки: {folder.Name}";
 
-            switch (word.Progress)
+            switch (word.ProgressType)
             {
-                case Progress.Comleted:
+                case ProgressType.Completed:
                     progressText.text = "Выучено";
                     progressText.color = Color.green;
                     break;
                 
-                case Progress.Repeat:
+                case ProgressType.Repeat:
                     progressText.text = "Повторить";
                     progressText.color = Color.yellow;
                     break;
                 
-                case Progress.InProgress:
+                case ProgressType.InProgress:
                     progressText.text = "Изучается";
                     progressText.color = Color.cyan;
                     break;

@@ -4,6 +4,7 @@
     {
         public string NativeValue;
         public string ForeignValue;
-        public Progress Progress;
+        public ProgressType ProgressType;
+        public int Progress;
     }
 }

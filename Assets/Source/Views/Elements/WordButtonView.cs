@@ -14,7 +14,7 @@ namespace Source
         [SerializeField] private LeanToggle select;
         [SerializeField] private Text foreignValue;
         [SerializeField] private Text nativeValue;
-        [SerializeField] private ProgressImage progressImage;
+        [SerializeField] private ProgressDisplayer progressDisplayer;
 
         [Space] [Header("Custom UI Elements")] [SerializeField]
         private SplitCstUiView splitCstUi;
@@ -33,19 +33,19 @@ namespace Source
             {
                 case ButtonMode.Base:
                     delete.gameObject.SetActive(false);
-                    progressImage.gameObject.SetActive(true);
+                    progressDisplayer.gameObject.SetActive(true);
                     select.gameObject.SetActive(false);
                     break;
 
                 case ButtonMode.Deliteble:
                     delete.gameObject.SetActive(true);
-                    progressImage.gameObject.SetActive(false);
+                    progressDisplayer.gameObject.SetActive(false);
                     select.gameObject.SetActive(false);
                     break;
 
                 case ButtonMode.Selecteble:
                     delete.gameObject.SetActive(false);
-                    progressImage.gameObject.SetActive(false);
+                    progressDisplayer.gameObject.SetActive(false);
                     select.gameObject.SetActive(true);
                     break;
             }
@@ -63,7 +63,7 @@ namespace Source
             _displayedWord = word;
             foreignValue.text = word.ForeignValue;
             nativeValue.text = word.NativeValue;
-            progressImage.SetIcon(word.Progress);
+            progressDisplayer.Set(word.ProgressType, word.Progress);
             UpdateUiElements();
         }
 

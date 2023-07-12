@@ -9,6 +9,7 @@ namespace Source.Serialization
         public string Name;
         public int CountLearned;
         public List<Word> Words;
-        public Progress Progress;
+        public ProgressType ProgressType;
+        public int Progress;
     }
 }

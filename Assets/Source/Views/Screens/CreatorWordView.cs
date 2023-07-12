@@ -76,7 +76,7 @@ namespace Source
             {
                 ForeignValue = foreignNameInput.text,
                 NativeValue = nativeNameInput.text,
-                Progress = Progress.InProgress
+                ProgressType = ProgressType.InProgress
             };
 
             OnCreateWord.Invoke(_currentWord, _selectedFolder);

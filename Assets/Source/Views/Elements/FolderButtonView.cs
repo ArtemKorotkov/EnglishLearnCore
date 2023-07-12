@@ -11,7 +11,7 @@ namespace Source
         [SerializeField] private LeanButton button;
         [SerializeField] private new Text name;
         [SerializeField] private Text countLearned;
-        [SerializeField] private ProgressImage progressImage;
+        [SerializeField] private ProgressDisplayer progressDisplayer;
         private Folder _displayedFolder;
         public event Action<Folder> Onclick;
         
@@ -19,7 +19,7 @@ namespace Source
         public void DisplayFolder(Folder folder)
         {
             name.text = folder.Name;
-            progressImage.SetIcon(folder.Progress);
+            progressDisplayer.Set(folder.ProgressType, folder.Progress);
             countLearned.text = "Выучено: " + folder.CountLearned + " из " + folder.Words?.Count.ToString();
             _displayedFolder = folder;
         }

@@ -1,8 +1,8 @@
 ﻿namespace Source
 {
-    public enum Progress
+    public enum ProgressType
     {
-        Comleted,
+        Completed,
         InProgress,
         Repeat,
     }

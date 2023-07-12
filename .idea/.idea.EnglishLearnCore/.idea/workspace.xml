@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cc6ecf7-cf41-4437-a6ec-b18958191264" name="Changes" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressBarCircleView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnglishLearnCore/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Screens/SelectWords.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/FolderButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/FolderButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Buttons/WordButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressImage.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Elements/ProgressImage.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreateWordController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/CreatorFolderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/NavigationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Controllers/ShowAllFolderController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/MainMenu/MainMenuView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Enums/Progress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Enums/ProgressType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Enums/Progress.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Enums/ProgressType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Folder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Services/Serialization/Word.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/FolderButtonView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressDisplayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressImage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressDisplayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Elements/WordButtonView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Elements/WordButtonView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/CreatorWordView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/CreatorWordView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/SelectFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/SelectFolderView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/SelectWordsView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/SelectWordsView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordsFromFolderView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordsFromFolderView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordContentView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Views/Screens/WordContentView.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,70 +43,20 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/8b/4596a45b/AsyncMethodBuilderCore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7fb80e7e71474ba9a2b7085379c47dd64a9368/00/3dc11ca3/CSharpCompilation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/AllFolders.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateFolder.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/CreateWord.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu/DictFuntions.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/MainMenu/Home.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SearchWord.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SelectFolder.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/SelectWords.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/WordContent.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Prefabs/Screens/WordsFromFolder.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppContextes/MainContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppContextes/MainContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppStates/MainState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Application/AppStates/MainState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/FolderController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/LocalizationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Controllers/MainMenuController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/AllFoldersView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/AllFoldersView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CreatorWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/CustomUI/NavigationController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/DictFunctionsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/HomeView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/MainMenu/SettingsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SearchWordView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectFolderView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/SelectWordsView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordContentView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordContentView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/WordsFromFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Enums/Progress.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Enums/Progress.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Folder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Folder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/JsonStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/JsonStorage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Word.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Services/Serialization/Word.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/Elements/FolderButtonView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/Views/Elements/ProgressDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/Elements/WordButtonView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/Screens/CreatorFolderView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/iarte/OneDrive/Рабочий стол/EnglishLearning/EnglishLearnCore/Assets/Source/Views/Screens/WordContentView.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -421,10 +377,10 @@
           <line>81</line>
           <properties documentPath="C:\Users\iarte\OneDrive\Рабочий стол\EnglishLearning\EnglishLearnCore\Assets\Source\Views\Screens\CreatorWordView.cs" initialLine="83" containingFunctionPresentation="method 'CreateWord'">
             <startOffsets>
-              <option value="2331" />
+              <option value="2339" />
             </startOffsets>
             <endOffsets>
-              <option value="2382" />
+              <option value="2390" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />

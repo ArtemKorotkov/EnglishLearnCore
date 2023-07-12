@@ -283,7 +283,7 @@ MonoBehaviour:
   button: {fileID: 5620654402364304975}
   name: {fileID: 7087595156676491047}
   countLearned: {fileID: 7682859379171249201}
-  progressImage: {fileID: 5015276182964573978}
+  progressDisplayer: {fileID: 5015276182964573978}
 --- !u!224 &4976195527116910676 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4885086360312015716, guid: 4328221c6772e994ba66477f09ad6ef5, type: 3}
@@ -309,7 +309,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7830784768913156758, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_Name
-      value: ProgressImage
+      value: ProgressDisplayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7931753919107879790, guid: edb4713de585c174091079cb606dae54, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8835347948425157124, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_Pivot.x
@@ -395,7 +399,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 597864997095141548, guid: edb4713de585c174091079cb606dae54, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: edb4713de585c174091079cb606dae54, type: 3}
 --- !u!114 &5015276182964573978 stripped
 MonoBehaviour:

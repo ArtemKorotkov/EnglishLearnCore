@@ -21,8 +21,7 @@ namespace Source
             displayWords.Display(folder);
             _folder = folder;
         }
-
-
+        
         private void ClickToWord(Word word)
         {
             OnClickToWord?.Invoke(word, _folder);
