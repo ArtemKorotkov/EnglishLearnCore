@@ -307,6 +307,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4976195527116910676}
     m_Modifications:
+    - target: {fileID: 7349408695112113253, guid: edb4713de585c174091079cb606dae54, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7830784768913156758, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_Name
       value: ProgressDisplayer
@@ -314,6 +318,18 @@ PrefabInstance:
     - target: {fileID: 7931753919107879790, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224281357175180266, guid: edb4713de585c174091079cb606dae54, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224281357175180266, guid: edb4713de585c174091079cb606dae54, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224281357175180266, guid: edb4713de585c174091079cb606dae54, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862745
       objectReference: {fileID: 0}
     - target: {fileID: 8835347948425157124, guid: edb4713de585c174091079cb606dae54, type: 3}
       propertyPath: m_Pivot.x

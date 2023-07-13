@@ -1,14 +1,15 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using Lean.Gui;
+using TMPro;
+using UnityEngine;
 
 namespace Source
 {
     public class ProgressBarCircleView : MonoBehaviour
     {
 
-        [SerializeField] private Image barCircle;
+        [SerializeField] private LeanCircle barCircle;
 
-        [SerializeField] private Text txtTitle;
+        [SerializeField] private TextMeshProUGUI txtTitle;
         private float barValue;
 
         public float BarValue
@@ -17,7 +18,7 @@ namespace Source
 
             set
             {
-                value = Mathf.Clamp(value, 0, 100);
+                value = Mathf.Clamp(value, 1, 99);
                 barValue = value;
                 UpdateValue(barValue);
             }
@@ -26,7 +27,7 @@ namespace Source
 
         void UpdateValue(float val)
         {
-            barCircle.fillAmount = -(val / 100) + 1f;
+            barCircle.Fill = val / 100;
             txtTitle.text =  val + "%";
         }
     }
